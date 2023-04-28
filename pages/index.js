@@ -4,6 +4,7 @@ const Home = () => {
   return (
     <>
       <div>boom</div>
+      <div>baam</div>
     </>
   )
 }
