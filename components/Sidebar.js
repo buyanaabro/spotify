@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default function Sidebar() {
+function Sidebar = () => {
   return (
-    <div>Sidebar</div>
+    <div className='w-64 h-screen bg-black'></div>
   )
 }
+
+export default Sidebar
