@@ -2,11 +2,13 @@ import React from 'react'
 import { data } from './data'
 import { useState } from 'react'
 import Image from 'next/image'
+import Sidebar from '@/components/Sidebar'
 
 
 export default function ArtistDetails() {
   return (
     <div className='w-screen h-screen'>
+        <Sidebar />
         <div className="w-screen h-[95vh] bg-[#121212]">
             <div className='w-[80vw] h-[40vh] bg-cover bg-center' style={{backgroundImage: `url(${data[0].cover1})`}}>
                 <div className='w-full'>
