@@ -2,5 +2,13 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  "/ArtistDetails": "pages/ArtistDetails.js"
+=======
+  "/Signup": "pages/Signup.js",
+>>>>>>> refs/remotes/origin/main
   "/Home": "pages/Home.js"
+>>>>>>> refs/remotes/origin/main
 }
