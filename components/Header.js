@@ -4,8 +4,8 @@ import Link from "next/link";
 export default function Header() {
   return (
     <div className="w-full h-16 fixed bg-black opacity-90 flex flex-row items-center ">
-      <div className="w-40 h-12 flex flex-row justify-center items-center space-x-5 mt-2 ml-12">
-        <div className="w-6 h-6 bg-[#121212] rounded-full">
+      <div className="w-40 h-12 flex flex-row justify-center items-center space-x-5 ml-12">
+        <div className="w-6 h-6 bg-[#121212] rounded-full flex justify-center items-center">
           <svg
             className="w-4 h-4 -rotate-90"
             viewBox="0 -4.5 20 20"
@@ -53,7 +53,7 @@ export default function Header() {
             </g>
           </svg>
         </div>
-        <div className="w-6 h-6 bg-[#121212] rounded-full">
+        <div className="w-6 h-6 bg-[#121212] rounded-full flex justify-center items-center">
           <svg
             className="w-4 h-4 rotate-90"
             viewBox="0 -4.5 20 20"

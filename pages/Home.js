@@ -11,7 +11,7 @@ export default function Home() {
         </div>
         <div className="w-full h-full bg-[#121212]">
           <Header />
-          <div className="w-20 h-20 text-black">hi</div>
+          <div className="w-20 h-20 text-white">hi</div>
         </div>
       </div>
       <div className="w-screen h-screen  bg-[#121212]"></div>
