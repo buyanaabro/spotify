@@ -1,6 +1,6 @@
 export const data = [
   {
-    singer: "am-c",
+    singer: "AM-C",
     songs: [
       "gund",
       "huurhun baigaach",
