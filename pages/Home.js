@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -14,7 +15,9 @@ export default function Home() {
           <div className="w-20 h-20 text-white">hi</div>
         </div>
       </div>
-      <div className="w-screen h-screen  bg-[#121212]"></div>
+      <div className="w-screen h-screen  bg-[#121212]">
+        <Footer />
+      </div>
     </>
   );
 }
