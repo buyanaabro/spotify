@@ -13,7 +13,7 @@ export default function ArtistDetails() {
         <div className="w-full h-[95vh] flex justify-end bg-[#121212]">
             <div className='w-[87vw] h-[40vh] bg-cover bg-center flex flex-col' style={{backgroundImage: `url(${data[0].cover1})`}}>
               <Header />
-                <div className='absolute pt-44 pl-14'>
+                <div className='pt-44 pl-14'>
                   <div className='flex flex-row items-center text-white text-xs'>
                     <Image src="/verified.png" width={27} height={0}/>
                     <div className='ml-2'>Verified Artist</div>
