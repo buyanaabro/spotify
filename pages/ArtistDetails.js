@@ -48,7 +48,7 @@ export default function ArtistDetails() {
                 <ol className='relative left-20 flex items-center text-white' key={index}>
                   <li className='text-gray-400 mr-4 cursor-default'>{index + 1}</li>
                   <Image src="https://i.scdn.co/image/ab67616d00001e0238991276d17ac6315dcd4a92" width={40} height={0} />
-                  <li className='m-6 cursor-pointer hover:underline'>{row}</li>
+                  <li className='m-6 mt-2 cursor-pointer hover:underline'>{row}</li>
                 </ol>
               ))}
             </songs>
