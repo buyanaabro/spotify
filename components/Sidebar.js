@@ -65,21 +65,22 @@ function Sidebar() {
       </div>
       <div className="w-50 h-20 space-y-3 mr-6"> //
         <button className="w-40 h-7 mt-3 flex items-center flex-row text-gray-400 duration-300 font-medium">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="black"
-            className="w-6 h-6 bg-gray-400 hover:bg-white duration-300 rounded-sm"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M12 4.5v15m7.5-7.5h-15"
-            />
-          </svg>
-          <div className="ml-4 text-sm duration-300 hover:text-white">Create playlist</div>
+          <div className="w-6 h-6 bg-gray-400 hover:bg-white duration-300 rounded-sm hover:text-white text-sm">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="black"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M12 4.5v15m7.5-7.5h-15"
+              />
+            </svg>
+            <div className="relative ml-10 bottom-[85%] w-24">Create playlist</div>
+          </div>
         </button>
         <button className="w-40 h-7 flex items-center flex-row text-gray-400 hover:text-white duration-300 font-medium">
           <div className="w-6 h-6 bg-gradient-to-r flex justify-center items-center from-indigo-600 to-blue-200 rounded-sm">
