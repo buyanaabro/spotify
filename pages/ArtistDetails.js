@@ -45,8 +45,10 @@ export default function ArtistDetails() {
               </div>
               <div className='relative left-14 font-semibold text-2xl text-white'>Popular</div>
               {data[0].duu.slice(0, 5).map((row, index) => (
-                <ol className='relative left-14 text-white' key={index}>
-                  <li className='m-6'>{index + 1} {row}</li>
+                <ol className='relative left-20 flex items-center text-white' key={index}>
+                  <li className='text-gray-400 mr-4 cursor-default'>{index + 1}</li>
+                  <Image src="https://i.scdn.co/image/ab67616d00001e0238991276d17ac6315dcd4a92" width={40} height={0} />
+                  <li className='m-6 cursor-pointer hover:underline'>{row}</li>
                 </ol>
               ))}
             </songs>
