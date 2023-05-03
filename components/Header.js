@@ -15,9 +15,16 @@ export default function Header() {
   }
 
   return (
-    <div className="w-full h-16 fixed bg-black opacity-90 flex flex-row items-center">
-      <div className="w-40 h-12 flex flex-row justify-center items-center space-x-5 ml-8">
-        <div className="w-6 h-6 bg-[#121212] rounded-full flex justify-center items-center">
+    <div
+      className={
+        opacity
+          ? "w-full h-16 fixed bg-black flex flex-row items-center duration-500"
+          : "w-full h-16 fixed flex flex-row items-center duration-500"
+      }
+    >
+      {/* style={{background: `rgba(255, 255, 255), ${bgOpacity}`}} */}
+      <div className="w-40 h-12 flex flex-row justify-center items-center space-x-5 ml-6">
+        <div className="flex justify-center items-center w-6 h-6 bg-[#121212] rounded-full">
           <svg
             className="w-4 h-4 -rotate-90"
             viewBox="0 -4.5 20 20"
@@ -35,8 +42,7 @@ export default function Header() {
             ></g>
             <g id="SVGRepo_iconCarrier">
               {" "}
-              <title>arrow_up [#ffffff]</title>{" "}
-              <desc>Created with Sketch.</desc> <defs> </defs>{" "}
+              <title>arrow_up [#ffffff]</title> <defs> </defs>{" "}
               <g
                 id="Page-1"
                 stroke="none"
@@ -65,7 +71,7 @@ export default function Header() {
             </g>
           </svg>
         </div>
-        <div className="w-6 h-6 bg-[#121212] rounded-full flex justify-center items-center">
+        <div className="flex justify-center items-center w-6 h-6 bg-[#121212] rounded-full">
           <svg
             className="w-4 h-4 rotate-90"
             viewBox="0 -4.5 20 20"
@@ -83,8 +89,7 @@ export default function Header() {
             ></g>
             <g id="SVGRepo_iconCarrier">
               {" "}
-              <title>arrow_up [#ffffff]</title>{" "}
-              <desc>Created with Sketch.</desc> <defs> </defs>{" "}
+              <title>arrow_up [#ffffff]</title> <defs> </defs>{" "}
               <g
                 id="Page-1"
                 stroke="none"

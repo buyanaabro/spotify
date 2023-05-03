@@ -1,6 +1,6 @@
 export const data = [
   {
-    singer: "am-c",
+    singer: "AM-C",
     songs: [
       "gund",
       "huurhun baigaach",
@@ -16,7 +16,7 @@ export const data = [
     ],
     link: "amc.html",
     photo: "amc.jpg",
-    cover1: "https://yt3.googleusercontent.com/ytc/AGIKgqPiAY_Fm8Ye3P3NDydekF9iguc4YnCyQCmLN10ZXg=s900-c-k-c0x00ffffff-no-rj",
+    cover: "https://yt3.googleusercontent.com/ytc/AGIKgqPiAY_Fm8Ye3P3NDydekF9iguc4YnCyQCmLN10ZXg=s900-c-k-c0x00ffffff-no-rj",
     name: "Аm-C",
     sub: 112014,
     cat: "Соло артист",
