@@ -12,7 +12,7 @@ export default function Home() {
           <Sidebar />
         </div>
 
-        <div className="w-full h-full bg-[#121212]">
+        <div className="w-full h-full bg-[#121212] ">
           <Header />
           <div className="w-20 h-20 text-white">hicheel</div>
         </div>
@@ -21,7 +21,7 @@ export default function Home() {
         <div className="w-64 h-full bg-white"></div>
         <Footer />
       </div>
-      <div className="w-screen h-48 flex flex-row">
+      <div className="w-screen h-32 flex flex-row">
         <div className="w-64 h-full bg-white"></div>
         <Footer2 />
       </div>

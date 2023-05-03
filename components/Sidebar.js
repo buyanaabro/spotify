@@ -6,7 +6,7 @@ function Sidebar() {
   return (
     <div className="w-60 h-full fixed bg-black left-0 flex flex-col items-center space-y-5">
       <div className="w-40 h-16 bg-contain bg-no-repeat bg-[url(https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png)] mt-6 mr-10"></div>
-      <div className="w-50 h-30 space-y-3 mr-7">
+      <div className="w-50 h-24 space-y-3 mr-7">
         <div className="w-40 h-7 mt-3 flex items-center flex-row text-white">
           <svg
             xmlns="http://www.w3.org/2000/svg"
