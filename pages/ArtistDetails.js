@@ -11,6 +11,7 @@ export default function ArtistDetails() {
   const [follow, setFollow] = useState()
   const [followStyle, setFollowStyle] = useState(false)
   const [totalPLays, setTotalPLays] = useState()
+  const [randomNumber, setRandomNumber] = useState()
   useEffect(() => {
     setFollow("FOLLOW")
   }, [])
@@ -23,6 +24,12 @@ export default function ArtistDetails() {
       setFollowStyle(false)
     }
   }
+  const rNumber = async () => {
+    setRandomNumber(Math.floor(Math.random() * (100, 1000)).toString() + "," + Math.floor(Math.random() * (100, 1000)).toString() + "," + Math.floor(Math.random() * (100, 1000)).toString())
+  }
+  useEffect(() => {
+    rNumber()
+  }, [])
   return (
     <div className='w-screen overflow-x-hidden h-[200vh]'>
       <Sidebar />
@@ -49,8 +56,8 @@ export default function ArtistDetails() {
                 <ol className='relative left-20 mt-[-0.8%] flex items-center text-white' key={index}>
                   <li className='text-gray-400 mr-4 cursor-default'>{index + 1}</li>
                   <Image src="https://i.scdn.co/image/ab67616d00001e0238991276d17ac6315dcd4a92" width={40} height={0} />
-                  <li className='m-6 cursor-pointer hover:underline'>{row}</li>
-                  <li>{Math.floor(Math.random() * (0, 1000000))}</li>
+                  <li className='w-40 m-6 cursor-pointer hover:underline'>{row}</li>
+                  <li className='text-gray-400 font-light text-sm ml-[35%]'>{randomNumber}</li>
                 </ol>
               ))}
             </songs>

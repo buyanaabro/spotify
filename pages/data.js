@@ -33,6 +33,11 @@ export const data = [
       "Starry Night",
       "Zombie",
     ],
+    listens: [
+      "147,127,469",
+      "36,706,899",
+      ""
+    ],
     mp3: [
       "Gund.mp3",
       "Huurhun Baigaach.mp3",
