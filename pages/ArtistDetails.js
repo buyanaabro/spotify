@@ -33,7 +33,7 @@ export default function ArtistDetails() {
 
   const [opacity, setOpacity] = React.useState(1);
   useEffect(() => {
-    const headerHeight = 400
+    const headerHeight = 600
     const range = 200;
     const offset = headerHeight / 2;
 
