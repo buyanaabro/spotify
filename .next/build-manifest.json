@@ -15,18 +15,10 @@
   ],
   "rootMainFiles": [],
   "pages": {
-    "/ArtistDetails": [
-<<<<<<< HEAD
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/ArtistDetails.js"
-    ],
     "/Home": [
-=======
->>>>>>> refs/remotes/origin/main
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/ArtistDetails.js"
+      "static/chunks/pages/Home.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",
