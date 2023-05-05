@@ -18,8 +18,8 @@ export default function Header() {
     <div
       className={
         opacity
-          ? "w-full h-16 fixed bg-black flex flex-row items-center duration-500"
-          : "w-full h-16 fixed flex flex-row items-center duration-500"
+          ? "w-full h-16 fixed bg-black flex flex-row items-center duration-500 z-50"
+          : "w-full h-16 fixed bg-black bg-opacity-50 flex flex-row items-center duration-500 z-50"
       }
     >
       {/* style={{background: `rgba(255, 255, 255), ${bgOpacity}`}} */}
