@@ -18,9 +18,7 @@ const Artists = () => {
           <Sidebar />
         </div>
         <div className="w-full h-full bg-[#121212] ">
-          <div className="w-full h-16">
-            <Header />
-          </div>
+          <div className="w-full h-16"></div>
           <div className="w-full h-16 flex flex-row items-center">
             <div className="w-40 h-16 flex jus items-center text-white text-2xl ml-16 font-semibold">
               Artists
@@ -56,6 +54,7 @@ const Artists = () => {
         <div className="w-64 h-full bg-white"></div>
         <Footer2 />
       </div>
+      <Header />
     </>
   );
 };
