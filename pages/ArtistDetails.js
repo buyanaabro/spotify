@@ -69,22 +69,24 @@ export default function ArtistDetails() {
                   <svg className='w-6 h-6 relative left-2 stroke-gray-400 hover:stroke-white' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M19 13C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11C18.4477 11 18 11.4477 18 12C18 12.5523 18.4477 13 19 13Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M5 13C5.55228 13 6 12.5523 6 12C6 11.4477 5.55228 11 5 11C4.44772 11 4 11.4477 4 12C4 12.5523 4.44772 13 5 13Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
                 </div>
                 <div className='relative left-14 font-semibold text-2xl text-white mb-2'>Popular</div>
-                {data[0].duu.slice(0, 5).map((row, index) => (
-                  <ol className='relative left-20 mt-[-0.8%] flex items-center text-white' key={index}>
-                    <li className='text-gray-400 mr-4 cursor-default'>{index + 1}</li>
-                    <Image src="https://i.scdn.co/image/ab67616d00001e0238991276d17ac6315dcd4a92" width={40} height={0} />
-                    <li className='w-40 m-6 cursor-pointer hover:underline'>{row}</li>
-                    <li className='text-gray-400 font-light text-sm ml-[45%]'>{randomNumber}</li>
-                  </ol>
-                ))}
-              </div>
-              <div className='h-[63%] flex flex-col justify-evenly mt-32 ml-40'>
-                {data[0].songdur.slice(0, 5).map((row, index) => (
-                  <div key={index}>
-                    <div className='text-gray-400 font-light text-sm m-2'>{row}</div>
-                  </div>
-                ))}
-              </div>
+                <div>
+                  {data[0].duu.slice(0, 5).map((row, index) => (
+                    <ol className='relative left-20 mt-[-0.8%] flex items-center text-white' key={index}>
+                      <li className='text-gray-400 mr-4 cursor-default'>{index + 1}</li>
+                      <Image src="https://i.scdn.co/image/ab67616d00001e0238991276d17ac6315dcd4a92" width={40} height={0} />
+                      <li className='w-40 m-6 cursor-pointer hover:underline'>{row}</li>
+                      <li className='text-gray-400 font-light text-sm ml-[45%]'>{randomNumber}</li>
+                    </ol>
+                  ))}
+                </div>
+                <div className='h-[63%] flex flex-col justify-evenly mt-32 ml-40'>
+                  {data[0].songdur.slice(0, 5).map((row, index) => (
+                    <div key={index}>
+                      <div className='text-gray-400 font-light text-sm m-2'>{row}</div>
+                    </div>
+                  ))}
+                </div>
+                </div>
             </songs>
             <div className='text-gray-400 relative text-sm font-semibold right-[79%] bottom-[6%] cursor-default'>See more</div>
         </main>

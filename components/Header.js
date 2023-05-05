@@ -6,7 +6,7 @@ export default function Header() {
   const [opacity, setOpacity] = useState(false);
   const changeOpacity = () => {
     if (typeof window !== "undefined") {
-      if (window.scrollY >= 90) setOpacity(true);
+      if (window.scrollY >= 1000) setOpacity(true);
       else setOpacity(false);
     }
   };
@@ -18,8 +18,8 @@ export default function Header() {
     <div
       className={
         opacity
-          ? "w-full h-16 fixed top-0 bg-black flex flex-row items-center duration-500"
-          : "w-full h-16 fixed top-0 flex flex-row items-center duration-500"
+          ? "w-full h-16 fixed top-0 bg-black flex flex-row items-center duration-300"
+          : "w-full h-16 fixed top-0 flex flex-row items-center duration-300"
       }
     >
       {/* style={{background: `rgba(255, 255, 255), ${bgOpacity}`}} */}
