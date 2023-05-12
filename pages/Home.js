@@ -1,10 +1,10 @@
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
 import Footer from "@/components/Footer";
-import Footer2 from "./Footer2";
+import Footer2 from "../components/Footer2";
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import Card from "@/components/Artists";
+import Card from "@/components/Card";
 import { data } from "./data";
 
 const Artists = () => {
