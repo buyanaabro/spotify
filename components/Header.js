@@ -24,7 +24,7 @@ export default function Header() {
     >
       {/* style={{background: `rgba(255, 255, 255), ${bgOpacity}`}} */}
       <div className="w-40 h-12 flex flex-row justify-center items-center space-x-5 ml-6">
-        <div className="flex justify-center items-center w-6 h-6 bg-[#121212] rounded-full">
+        <div className="flex justify-center items-center w-6 h-6 bg-[#121212] rounded-full ml-96">
           <svg
             className="w-4 h-4 -rotate-90"
             viewBox="0 -4.5 20 20"
@@ -119,7 +119,7 @@ export default function Header() {
           </svg>
         </div>
       </div>
-      <div className="w-full h-12 flex flex-row space-x-6 justify-end mr-60">
+      <div className="w-full h-12 flex flex-row space-x-6 justify-end mr-8">
         <Link
           href="Signup"
           className="text-gray-400 font-sans hover:text-white text-base flex justify-center items-center hover:scale-105"

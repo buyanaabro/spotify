@@ -22,12 +22,29 @@ export const data = [
     sub: 112014,
     cat: "Соло артист",
     duu: [
-      "Гүнд",
-      "Хөөрхөн байгаач",
-      "Perfect Blue",
-      "Санасан байна",
-      "Үхсэн баас",
-      "Яг энчээ",
+      { songName: "Гүнд",
+        img: "https://cdns-images.dzcdn.net/images/cover/8f07364a42d9074afdac7df0a589a328/264x264.jpg"
+      },
+      {
+        songName: "Хөөрхөн байгаач",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Perfect Blue",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Санасан байна",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Үхсэн баас",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Яг энчээ",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
       "Зүрхэндээ сонсоорой",
       "Юу хүсэж байна",
       "Habibi",
