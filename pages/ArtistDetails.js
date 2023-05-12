@@ -15,6 +15,7 @@ export default function ArtistDetails() {
   const [opacity, setOpacity] = useState(1);
   const [main, setMain] = useState(false)
   const [seeMore, setSeeMore] = useState()
+  const [seeMoreStyle, setSeeMoreStyle] = useState(false)
   useEffect(() => {
     setFollow("FOLLOW")
     setSeeMore("See more")
@@ -62,14 +63,16 @@ export default function ArtistDetails() {
     if(main == false) {
       setMain(true)
       setSeeMore("See less")
+      setSeeMoreStyle(true)
     } else {
       setMain(false)
       setSeeMore("See more")
+      setSeeMoreStyle(false)
     }
   }
 
   return (
-    <div className='w-screen overflow-x-hidden h-[200vh]'>
+    <div className='w-screen overflow-x-hidden h-[300vh]'>
         <main className={ main ? "top-0 right-0 w-full h-[140vh] flex flex-col items-end bg-[#121212]" : "top-0 right-0 w-full h-[95vh] flex flex-col items-end bg-[#121212]"}>
             <div className='w-[85.7vw] h-[40vh] bg-cover bg-center flex flex-col' style={{backgroundImage: `url(${data[0].cover})`, opacity: opacity}}>
                 <div className='pt-44 pl-14'>
@@ -108,19 +111,106 @@ export default function ArtistDetails() {
                   </div>
                 </div>
             </songs>
-            <div onClick={clickSeeMore} className='text-gray-400 hover:text-white relative text-sm font-semibold right-[79%] bottom-[6%] cursor-default'>{seeMore}</div>
+            <div onClick={clickSeeMore} className={seeMoreStyle ? 'text-gray-400 hover:text-white relative text-sm font-semibold right-[79%] top-[27%] cursor-default' : 'text-gray-400 hover:text-white relative text-sm font-semibold right-[79%] bottom-[6%] cursor-default'}>{seeMore}</div>
         </main>
-        <div className='flex flex-col justify-center w-[85.7vw] h-[40vh] bg-blue-600 relative left-[14.3vw]'>
-          <div className='text-white text-2xl font-semibold'>Popular Releases</div>
+        <div className='flex flex-col justify-center w-[85.7vw] h-[40vh] bg-[#121212] relative left-[14.3vw]'>
+            <div className='text-white text-2xl font-semibold mr-6 ml-6 mb-6'>Popular Releases</div>
           <div className='w-full h-full grid grid-cols-5 gap-5 ml-4'>
-            {data[0].duu.slice(0, 5).map((row, index) => (
+            {data[0].duu.slice(3, 8).map((row, index) => (
                 <div key={index}>
                       <button className="bg-[#171717] group rounded-lg flex flex-col font-mono items-center hover:bg-[#303030] duration-300">
                       <div
                         className={`w-56 h-48 bg-white mt-2 drop-shadow-2xl rounded-lg bg-cover flex justify-end items-end`}
                         style={{ backgroundImage: `url(${row.img})` }}
                       >
-                        <div className="w-16 h-16 opacity-0 group-hover:opacity-100 group-hover:mb-1 duration-300 hover:scale-105 bg-contain bg-no-repeat bg-[url(https://jccdallas.org/wp-content/uploads/2020/06/Spotify-Play-Button.png)]"></div>
+                        <div className="w-16 h-16 opacity-0 group-hover:opacity-100 group-hover:mb-1 duration-300 hover:scale-105 bg-contain bg-no-repeat bg-[url(/playButton.png)]"></div>
+                      </div>
+                      <div className="w-56 h-6 mt-4 flex justify-start ml-3">
+                        <div className="text-white text-xl font-medium ml-px mt-1">
+                          {row.songName}
+                        </div>
+                      </div>
+                      <div className="w-56 h-12 mt-2 text-gray-400 text-sm flex items-center ml-4 mb-4">
+                        Latest Release
+                      </div>
+                    </button>
+                </div>
+              ))}
+          </div>
+        </div>
+
+        <div className='flex flex-col justify-center w-[85.7vw] h-[40vh] bg-[#121212] relative left-[14.3vw]'>
+          <div className="flex items-center justify-between">
+            <div className='text-white text-2xl font-semibold mr-6 ml-6 mb-6'>Albums</div>
+            <div className="text-gray-400 text-sm font-semibold mr-6">See discography</div>
+          </div>
+          <div className='w-full h-full grid grid-cols-5 gap-5 ml-4'>
+            {data[0].duu.slice(3, 8).map((row, index) => (
+                <div key={index}>
+                      <button className="bg-[#171717] group rounded-lg flex flex-col font-mono items-center hover:bg-[#303030] duration-300">
+                      <div
+                        className={`w-56 h-48 bg-white mt-2 drop-shadow-2xl rounded-lg bg-cover flex justify-end items-end`}
+                        style={{ backgroundImage: `url(${row.img})` }}
+                      >
+                        <div className="w-16 h-16 opacity-0 group-hover:opacity-100 group-hover:mb-1 duration-300 hover:scale-105 bg-contain bg-no-repeat bg-[url(/playButton.png)]"></div>
+                      </div>
+                      <div className="w-56 h-6 mt-4 flex justify-start ml-3">
+                        <div className="text-white text-xl font-medium ml-px mt-1">
+                          {row.songName}
+                        </div>
+                      </div>
+                      <div className="w-56 h-12 mt-2 text-gray-400 text-sm flex items-center ml-4 mb-4">
+                        Latest Release
+                      </div>
+                    </button>
+                </div>
+              ))}
+          </div>
+        </div>
+
+        <div className='flex flex-col justify-center w-[85.7vw] h-[40vh] bg-[#121212] relative left-[14.3vw]'>
+          <div className="flex items-center justify-between">
+            <div className='text-white text-2xl font-semibold mr-6 ml-6 mb-6'>Singles and EPs</div>
+            <div className="text-gray-400 text-sm font-semibold mr-6">See discography</div>
+          </div>
+          <div className='w-full h-full grid grid-cols-5 gap-5 ml-4'>
+            {data[0].duu.slice(3, 8).map((row, index) => (
+                <div key={index}>
+                      <button className="bg-[#171717] group rounded-lg flex flex-col font-mono items-center hover:bg-[#303030] duration-300">
+                      <div
+                        className={`w-56 h-48 bg-white mt-2 drop-shadow-2xl rounded-lg bg-cover flex justify-end items-end`}
+                        style={{ backgroundImage: `url(${row.img})` }}
+                      >
+                        <div className="w-16 h-16 opacity-0 group-hover:opacity-100 group-hover:mb-1 duration-300 hover:scale-105 bg-contain bg-no-repeat bg-[url(/playButton.png)]"></div>
+                      </div>
+                      <div className="w-56 h-6 mt-4 flex justify-start ml-3">
+                        <div className="text-white text-xl font-medium ml-px mt-1">
+                          {row.songName}
+                        </div>
+                      </div>
+                      <div className="w-56 h-12 mt-2 text-gray-400 text-sm flex items-center ml-4 mb-4">
+                        Latest Release
+                      </div>
+                    </button>
+                </div>
+              ))}
+          </div>
+        </div>
+        
+        <div className='flex flex-col justify-center w-[85.7vw] h-[40vh] bg-[#121212] relative left-[14.3vw]'>
+          <div className="flex items-center justify-between">
+            <div className='text-white text-2xl font-semibold mr-6 ml-6 mb-6'>Singles and EPs</div>
+            <div className="text-gray-400 text-sm font-semibold mr-6">See discography</div>
+          </div>
+          <div className='w-full h-full grid grid-cols-5 gap-5 ml-4'>
+            {data[0].duu.slice(6, 7).map((row, index) => (
+                <div key={index}>
+                      <button className="bg-[#171717] group rounded-lg flex flex-col font-mono items-center hover:bg-[#303030] duration-300">
+                      <div
+                        className={`w-56 h-48 bg-white mt-2 drop-shadow-2xl rounded-lg bg-cover flex justify-end items-end`}
+                        style={{ backgroundImage: `url(${row.img})` }}
+                      >
+                        <div className="w-16 h-16 opacity-0 group-hover:opacity-100 group-hover:mb-1 duration-300 hover:scale-105 bg-contain bg-no-repeat bg-[url(/playButton.png)]"></div>
                       </div>
                       <div className="w-56 h-6 mt-4 flex justify-start ml-3">
                         <div className="text-white text-xl font-medium ml-px mt-1">

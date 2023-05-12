@@ -1,19 +1,6 @@
 export const data = [
   {
     singer: "AM-C",
-    songs: [
-      "gund",
-      "huurhun baigaach",
-      "perfect blue",
-      "sanasan baina",
-      "uhsen baas",
-      "yag enchee",
-      "zurhendee sonsooroi",
-      "yu husej baina",
-      "habibi",
-      "starry night",
-      "zombie",
-    ],
     link: "amc.html",
     photo: "amc.jpg",
     cover:
@@ -35,21 +22,32 @@ export const data = [
       },
       {
         songName: "Санасан байна",
-        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+        img: "https://cdns-images.dzcdn.net/images/cover/8f07364a42d9074afdac7df0a589a328/264x264.jpg"
       },
       {
         songName: "Үхсэн баас",
-        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+        img: "https://i.ytimg.com/vi/oc16WZJYVOE/maxresdefault.jpg"
       },
       {
         songName: "Яг энчээ",
+        img: "https://cdns-images.dzcdn.net/images/cover/f5ed69f0a6264be087f087fc63284fe4/264x264.jpg"
+      },
+      {
+        songName: "Зүрхэндээ сонс...",
+        img: "https://images.genius.com/227b76b7d787e11b7680bd4c535cf094.1000x1000x1.jpg"
+      },
+      {
+        songName: "Habibi",
         img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
       },
-      "Зүрхэндээ сонсоорой",
-      "Юу хүсэж байна",
-      "Habibi",
-      "Starry Night",
-      "Zombie",
+      {
+        songName: "Starry Night",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Zombie",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
     ],
     listens: ["147,127,469", "36,706,899", ""],
     mp3: [
@@ -84,20 +82,6 @@ export const data = [
   },
   {
     singer: "vandebo",
-    songs: [
-      "too deep",
-      "chamin yum",
-      "galt tereg",
-      "hair",
-      "huuhdiin 100",
-      "namaig too",
-      "sain bodoj uzsen uu",
-      "unana",
-      "haru haru",
-      "ayo",
-      "18 savage",
-      "zogsohgui",
-    ],
     link: "vandebo.html",
     photo: "vandebo.jpg",
     cover:
@@ -153,19 +137,6 @@ export const data = [
   },
   {
     singer: "sash",
-    songs: [
-      "6",
-      "bayartai",
-      "chi",
-      "erh duraaraa galzuu",
-      "goo",
-      "nisvanis",
-      "rari",
-      "close to you",
-      "tsonhon door",
-      "mungu",
-      "zaisan",
-    ],
     link: "sash.html",
     photo: "sash.jpg",
     cover:
@@ -218,18 +189,6 @@ export const data = [
   },
   {
     singer: "choijoo",
-    songs: [
-      "havriin gants ulias",
-      "salhind shivneh ugs",
-      "chamd uldeey",
-      "hurch chadahgui",
-      "sain bisx",
-      "miniih",
-      "margaash borootoi",
-      "ene duug min duusahaas umnu",
-      "ahin dahin durlamaar",
-      "1001 tsetsegs",
-    ],
     link: "choijoo.html",
     photo: "choijoo2.jpg",
     name: "Чойжоо",
@@ -279,18 +238,6 @@ export const data = [
   },
   {
     singer: "ginjin",
-    songs: [
-      "so cold",
-      "arasso",
-      "ene much",
-      "ganbei",
-      "missed call",
-      "unuudur",
-      "atm",
-      "birthday",
-      "biye daa",
-      "boroo",
-    ],
     link: "ginjin.html",
     photo: "ginjin.jpg",
     cover:
@@ -340,16 +287,6 @@ export const data = [
   },
   {
     singer: "nene",
-    songs: [
-      "unendee",
-      "chas tas",
-      "too shy",
-      "sugar mama",
-      "bon o bon",
-      "tko",
-      "one shot",
-      "us tsaital hamt",
-    ],
     link: "nene.html",
     photo: "nene.jpg",
     cover:
@@ -393,19 +330,6 @@ export const data = [
   },
   {
     singer: "rokit bay",
-    songs: [
-      "evderhii hun",
-      "sahilga sul",
-      "neg udriin haan",
-      "chutguriin PR",
-      "bid hoyr",
-      "hyazgaargui",
-      "bor arist gaamp",
-      "oriloon",
-      "hooson zai",
-      "zugaatai bailaa",
-      "uulen domog",
-    ],
     link: "rokitbay.html",
     photo: "rokitbay2.jpg",
     cover:
@@ -458,19 +382,6 @@ export const data = [
   },
   {
     singer: "nisvanis",
-    songs: [
-      "muu zurshil",
-      "ulaan heruulch",
-      "az jargaltai tugsdug",
-      "nergui duu",
-      "esreg utgaar n",
-      "minii nirvana",
-      "tsag hugatsaa bugdiig emchilne",
-      "setgel hudulnu",
-      "nisdeg tavag",
-      "hezee negen tsagt bid nisej magadgui",
-      "zugaatai bailaa",
-    ],
     link: "nisvanis.html",
     photo: "nisvanis.jpg",
     cover:
@@ -523,19 +434,6 @@ export const data = [
   },
   {
     singer: "bold",
-    songs: [
-      "one shot",
-      "yaj chi uurchilvuu",
-      "chi nadad durlaasai",
-      "hairtai huniihee gar luu guigeerei",
-      "ayo",
-      "nud chin hair haruulna",
-      "bidnii amidardag ertunts",
-      "udaanaar",
-      "chamd sonsogdoj baina uu",
-      "daam",
-      "uulen domog",
-    ],
     link: "bold.html",
     photo: "bold.jpg",
     cover:
@@ -588,20 +486,6 @@ export const data = [
   },
   {
     singer: "thunder",
-    songs: [
-      "neg l uhne",
-      "baigaagaar min huleen avah uu",
-      "dandaa daardag ohin",
-      "oyutan",
-      "bi chinii naiz zaluu baij boloh uu",
-      "er hun shg er hun bai",
-      "ex bolmoorgui baina",
-      "cool aav",
-      "duurge",
-      "gantshan shaltgaan",
-      "i am a man",
-      "mommy",
-    ],
     link: "thunder.html",
     photo: "thunder.jpg",
     cover:

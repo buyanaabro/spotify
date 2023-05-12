@@ -15,6 +15,7 @@ const Artists = () => {
     <>
       <div className="w-screen h-full flex flex-row bg-[#121212]">
         <div className="w-64 h-full bg-white">
+          <Header />
           <Sidebar />
         </div>
         <div className="w-full h-full bg-[#121212] ">
@@ -60,7 +61,6 @@ const Artists = () => {
         <div className="w-64 h-full bg-white"></div>
         <Footer2 />
       </div>
-      <Header />
     </>
   );
 };
