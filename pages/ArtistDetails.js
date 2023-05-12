@@ -1,10 +1,10 @@
-import React from 'react'
-import { data } from './data'
-import { useState, useEffect } from 'react'
-import Image from 'next/image'
-import Sidebar from '@/components/Sidebar'
-import Header from '@/components/Header'
-import { useRouter } from 'next/router'
+import React from "react";
+import { data } from "./data";
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import Sidebar from "@/components/Sidebar";
+import Header from "@/components/Header";
+import { useRouter } from "next/router";
 
 export default function ArtistDetails() {
   const router = useRouter()
@@ -20,27 +20,33 @@ export default function ArtistDetails() {
     setSeeMore("See more")
   }, [])
   const boom = () => {
-    if(followStyle == false) {
-      setFollow("FOLLOWING")
-      setFollowStyle(true)
+    if (followStyle == false) {
+      setFollow("FOLLOWING");
+      setFollowStyle(true);
     } else {
-      setFollow("FOLLOW")
-      setFollowStyle(false)
+      setFollow("FOLLOW");
+      setFollowStyle(false);
     }
-  }
+  };
   const rNumber = () => {
-    setRandomNumber(Math.floor(Math.random() * (100, 1000)).toString() + "," + Math.floor(Math.random() * (100, 1000)).toString() + "," + Math.floor(Math.random() * (100, 1000)).toString())
-  }
+    setRandomNumber(
+      Math.floor(Math.random() * (100, 1000)).toString() +
+        "," +
+        Math.floor(Math.random() * (100, 1000)).toString() +
+        "," +
+        Math.floor(Math.random() * (100, 1000)).toString()
+    );
+  };
   useEffect(() => {
-    rNumber()
-  }, [])
+    rNumber();
+  }, []);
 
   useEffect(() => {
-    const headerHeight = 600
+    const headerHeight = 500
     const range = 200;
     const offset = headerHeight / 2;
 
-    const didScrollPage = e => {
+    const didScrollPage = (e) => {
       let calc = 1 - (window.scrollY - offset + range) / range;
       if (calc > 1) {
         calc = 1;
@@ -132,5 +138,5 @@ export default function ArtistDetails() {
         <Header />
         <Sidebar />
     </div>
-  )
+  );
 }

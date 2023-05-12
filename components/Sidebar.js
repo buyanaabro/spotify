@@ -1,12 +1,27 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import styles from "@/styles/Home.module.css";
 
 function Sidebar() {
+  const [playlists, setPlayLists] = useState([]);
+
+  const addToPlaylist = () => {
+    setPlayLists([
+      ...playlists,
+      {
+        label: "Playlist",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa5Z11CZTMkvsu0yzbg2XxyKrR5A45QLrEaw&usqp=CAU",
+        name: "My Playlist#",
+      },
+    ]);
+    console.log("first");
+  };
   return (
     <div className="w-60 h-full fixed bg-black left-0 top-0 flex flex-col items-center space-y-5 z-50">
-      <div className="w-40 h-16 bg-contain bg-no-repeat bg-[url(https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png)] mt-6 mr-10"></div>
-      <div className="w-50 h-24 space-y-3 mr-7">
+      <div className="w-40 h-16 bg-contain bg-no-repeat mt-6 mr-10">
+        <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" />
+      </div>
+      <div className="h-24 space-y-3 mr-7">
         <div className="w-40 h-7 mt-3 flex items-center flex-row text-white">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -85,6 +100,27 @@ function Sidebar() {
             </div>
           </div>
         </button>
+        {playlists.map((row, index) => (
+          <button
+            key={index}
+            className="w-40 text-gray-400 hover:text-white duration-300"
+          >
+            <div className="w-full h-7 flex items-center">
+              <div
+                className="w-8 h-6 rounded-sm bg-cover"
+                style={{ backgroundImage: `url(${row.img})` }}
+              ></div>
+              <div className="w-full h-7 ml-5">
+                <div className="w-full h-4 text-sm flex justify-start">
+                  {row.name}
+                </div>
+                <div className="w-full h-2 text-xs flex justify-start">
+                  {row.label}
+                </div>
+              </div>
+            </div>
+          </button>
+        ))}
         <button className="w-40 h-7 flex items-center flex-row text-gray-400 hover:text-white duration-300 font-medium">
           <div className="w-6 h-6 bg-gradient-to-r flex justify-center items-center from-indigo-600 to-blue-200 rounded-sm">
             <svg

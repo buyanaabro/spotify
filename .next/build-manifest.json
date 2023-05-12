@@ -20,6 +20,11 @@
       "static/chunks/main.js",
       "static/chunks/pages/ArtistDetails.js"
     ],
+    "/Signup": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Signup.js"
+    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
