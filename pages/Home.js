@@ -13,7 +13,7 @@ const Artists = () => {
 
   return (
     <>
-      <div className="w-screen h-screen flex flex-row bg-[#121212]">
+      <div className="w-screen h-full flex flex-row bg-[#121212]">
         <div className="w-64 h-full bg-white">
           <Sidebar />
         </div>
@@ -23,7 +23,7 @@ const Artists = () => {
             <div className="w-40 h-16 flex jus items-center text-white text-2xl ml-16 font-semibold">
               Artists
             </div>
-            <button className="w-full h-16 hover:underline-offset-4 flex justify-end items-center text-gray-400 text-sm mr-8">
+            <button className="w-full h-16 hover:underline hover:underline-offset-2 hover:text-white flex justify-end items-center text-gray-400 text-sm mr-8 ">
               Show all
             </button>
           </div>
@@ -35,14 +35,20 @@ const Artists = () => {
             </div>
           </div>
           <div className="w-full h-16 flex flex-row items-center">
-            <div className="w-56 h-16 flex jus items-center text-white text-2xl ml-16 font-semibold">
+            <div className="w-56 h-16 flex items-center text-white text-2xl ml-16 font-semibold">
               Spotify Playlists
             </div>
-            <button className="w-full h-16 hover:underline-offset-4 flex justify-end items-center text-gray-400 text-sm mr-8">
+            <button className="w-full h-16 hover:underline hover:underline-offset-2 hover:text-white flex justify-end items-center text-gray-400 text-sm mr-8">
               Show all
             </button>
           </div>
-          <div className="w-full h-80 bg-white"></div>
+          <div className="w-full h-72 flex justify-center items-center">
+            <div className="w-11/12 h-72 grid grid-cols-5 gap-5 ml-4">
+              {data.slice(6, 10).map((row, index) => (
+                <Card key={index} row={row} />
+              ))}
+            </div>
+          </div>
           <div className="w-20 h-20 text-white"></div>
         </div>
       </div>
