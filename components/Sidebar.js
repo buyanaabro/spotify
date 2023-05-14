@@ -21,6 +21,7 @@ function Sidebar() {
       <div className="w-32 h-12 bg-contain bg-no-repeat mt-6 mr-16">
         <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" />
       </div>
+
       <div className="h-24 space-y-3 mr-7">
         <div className="w-40 h-7 mt-3 flex items-center flex-row text-white">
           <svg
