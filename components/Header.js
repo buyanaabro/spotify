@@ -18,9 +18,9 @@ export default function Header() {
     <div
       className={
         opacity
-          ? "w-full h-16 fixed top-0 bg-black flex flex-row items-center duration-300 z-40"
-          : "w-full h-16 fixed top-0 bg-black bg-opacity-50 flex flex-row items-center duration-300 z-40"
-      }
+          ? "w-full h-16 fixed top-0 bg-black flex flex-row items-center duration-300 z-50"
+          : "w-full h-16 fixed top-0 flex flex-row items-center duration-300 z-50"
+      } 
     >
       {/* style={{background: `rgba(255, 255, 255), ${bgOpacity}`}} */}
       <div className="w-40 h-12 flex flex-row justify-center items-center space-x-5 ml-6">

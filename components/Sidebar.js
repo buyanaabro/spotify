@@ -18,7 +18,7 @@ function Sidebar() {
   };
   return (
     <div className="w-60 h-full fixed bg-black left-0 top-0 flex flex-col items-center space-y-5 z-50">
-      <div className="w-40 h-16 bg-contain bg-no-repeat mt-6 mr-10">
+      <div className="w-32 h-12 bg-contain bg-no-repeat mt-6 mr-16">
         <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" />
       </div>
       <div className="h-24 space-y-3 mr-7">
@@ -78,11 +78,9 @@ function Sidebar() {
           <button className="ml-4 text-sm">Your library</button>
         </div>
       </div>
-      <div className="w-40 space-y-3 mr-6">
-        <button
-          className="w-40 h-7 mt-3 flex items-center flex-row text-gray-400 duration-300"
-          onClick={() => addToPlaylist()}
-        >
+      <div className="w-50 h-20 space-y-3 mr-6">
+        {" "}
+        <button className="w-40 h-7 mt-10 flex items-center flex-row text-gray-400 duration-300">
           <div className="w-6 h-6 bg-gray-400 hover:bg-white duration-300 rounded-sm hover:text-white text-sm font-medium">
             <svg
               xmlns="http://www.w3.org/2000/svg"
