@@ -18,9 +18,9 @@ export default function Header() {
     <div
       className={
         opacity
-          ? "w-full h-16 fixed top-0 bg-black flex flex-row items-center duration-300 z-40"
-          : "w-full h-16 fixed top-0 bg-black bg-opacity-50 flex flex-row items-center duration-300 z-40"
-      }
+          ? "w-full h-16 fixed top-0 bg-black flex flex-row items-center duration-300 z-50"
+          : "w-full h-16 fixed top-0 flex flex-row items-center duration-300 z-50"
+      } 
     >
       {/* style={{background: `rgba(255, 255, 255), ${bgOpacity}`}} */}
       <div className="w-40 h-12 flex flex-row justify-center items-center space-x-5 ml-6">
@@ -34,11 +34,11 @@ export default function Header() {
             fill="#ffffff"
             stroke="#ffffff"
           >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
             <g
               id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             ></g>
             <g id="SVGRepo_iconCarrier">
               {" "}
@@ -46,9 +46,9 @@ export default function Header() {
               <g
                 id="Page-1"
                 stroke="none"
-                stroke-width="1"
+                strokeWidth="1"
                 fill="none"
-                fill-rule="evenodd"
+                fillRule="evenodd"
               >
                 {" "}
                 <g
@@ -81,11 +81,11 @@ export default function Header() {
             fill="#ffffff"
             stroke="#ffffff"
           >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
             <g
               id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             ></g>
             <g id="SVGRepo_iconCarrier">
               {" "}
@@ -93,9 +93,9 @@ export default function Header() {
               <g
                 id="Page-1"
                 stroke="none"
-                stroke-width="1"
+                strokeWidth="1"
                 fill="none"
-                fill-rule="evenodd"
+                fillRule="evenodd"
               >
                 {" "}
                 <g
