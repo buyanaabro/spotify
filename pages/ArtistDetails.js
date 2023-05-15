@@ -47,8 +47,8 @@ export default function ArtistDetails() {
   }, []);
 
   useEffect(() => {
-    const headerHeight = 500;
-    const range = 200;
+    const headerHeight = 400;
+    const range = 100;
     const offset = headerHeight / 2;
 
     const didScrollPage = (e) => {
@@ -80,8 +80,8 @@ export default function ArtistDetails() {
       <main
         className={
           main
-            ? "top-0 right-0 w-full h-[140vh] flex flex-col items-end bg-[#121212]"
-            : "top-0 right-0 w-full h-[95vh] flex flex-col items-end bg-[#121212]"
+            ? "top-0 right-0 w-full h-[140vh] flex flex-col items-end bg-[#121212] transition-all"
+            : "top-0 right-0 w-full h-[95vh] flex flex-col items-end bg-[#121212] transition-all"
         }
       >
         <div
@@ -205,8 +205,8 @@ export default function ArtistDetails() {
         <div className="text-white text-2xl font-semibold mr-6 ml-6 mb-6">
           Popular Releases
         </div>
-        <div className="w-full h-full grid grid-cols-5 gap-5 ml-4">
-          {data[0].duu.slice(3, 8).map((row, index) => (
+        <div className="w-full h-full grid grid-cols-6 gap-5 ml-4">
+          {data[0].duu.slice(3, 9).map((row, index) => (
             <Song_Card key={index} row={row} />
           ))}
         </div>
@@ -220,8 +220,8 @@ export default function ArtistDetails() {
             See discography
           </div>
         </div>
-        <div className="w-full h-full grid grid-cols-5 gap-5 ml-4">
-          {data[0].duu.slice(3, 8).map((row, index) => (
+        <div className="w-full h-full grid grid-cols-6 gap-5 ml-4">
+          {data[0].duu.slice(3, 9).map((row, index) => (
             <Song_Card key={index} row={row} />
           ))}
         </div>
@@ -235,8 +235,8 @@ export default function ArtistDetails() {
             See discography
           </div>
         </div>
-        <div className="w-full h-full grid grid-cols-5 gap-5 ml-4">
-          {data[0].duu.slice(3, 8).map((row, index) => (
+        <div className="w-full h-full grid grid-cols-6 gap-5 ml-4">
+          {data[0].duu.slice(3, 9).map((row, index) => (
             <Song_Card key={index} row={row} />
           ))}
         </div>
@@ -250,8 +250,8 @@ export default function ArtistDetails() {
             See discography
           </div>
         </div>
-        <div className="w-full h-full grid grid-cols-5 gap-5 ml-4">
-          {data[0].duu.slice(3, 8).map((row, index) => (
+        <div className="w-full h-full grid grid-cols-6 gap-5 ml-4">
+          {data[0].duu.slice(3, 9).map((row, index) => (
             <Song_Card key={index} row={row} />
           ))}
         </div>
@@ -265,19 +265,26 @@ export default function ArtistDetails() {
             See discography
           </div>
         </div>
-        <div className="w-full h-full grid grid-cols-5 gap-5 ml-4">
-          {data.slice(1, 6).map((row, index) => (
+        <div className="w-full h-full grid grid-cols-6 gap-5 ml-4">
+          {data.slice(1, 7).map((row, index) => (
             <Card key={index} row={row} />
           ))}
         </div>
       </div>
+      <div className="w-[85.7vw] h-[70vh] relative left-[14.3vw] bg-[#121212] pl-6 pt-8">
+          <div className="text-white text-2xl font-semibold">About</div>
+          <div className="w-[65%] h-[90%] flex flex-col justify-end bg-cover bg-center rounded-lg text-white p-10" style={{backgroundImage: "url('https://i.ytimg.com/vi/jlpn7-voy9c/maxresdefault.jpg')"}}>
+            <div className="font-semibold">{randomNumber} monthly listeners</div>
+            <div className="w-[80%]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+          </div>
+      </div>
       <Header />
       <Sidebar />
-      <div className="w-screen h-96 relative top-[80vh] flex flex-row">
+      <div className="w-screen h-96 relative flex flex-row">
         <div className="w-64 h-full bg-white"></div>
         <Footer />
       </div>
-      <div className="w-screen h-32 relative top-[80vh] flex flex-row">
+      <div className="w-screen h-32 relative flex flex-row">
         <div className="w-64 h-full bg-white"></div>
         <Footer2 />
       </div>
