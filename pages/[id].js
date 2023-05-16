@@ -28,6 +28,7 @@ export default function ArtistDetails( { user }) {
   const [main, setMain] = useState(false);
   const [seeMore, setSeeMore] = useState();
   const [seeMoreStyle, setSeeMoreStyle] = useState(false);
+  const [showSongs, setShowSongs] = useState(5)
   useEffect(() => {
     setFollow("FOLLOW");
     setSeeMore("See more");
@@ -76,10 +77,12 @@ export default function ArtistDetails( { user }) {
       setMain(true);
       setSeeMore("See less");
       setSeeMoreStyle(true);
+      setShowSongs(10)
     } else {
       setMain(false);
       setSeeMore("See more");
       setSeeMoreStyle(false);
+      setShowSongs(5)
     }
   };
 
@@ -88,7 +91,7 @@ export default function ArtistDetails( { user }) {
       <main
         className={
           main
-            ? "top-0 right-0 w-full h-[140vh] flex flex-col items-end bg-[#121212] transition-all"
+            ? "top-0 right-0 w-full h-[125vh] flex flex-col items-end bg-[#121212] transition-all"
             : "top-0 right-0 w-full h-[95vh] flex flex-col items-end bg-[#121212] transition-all"
         }
       >
@@ -165,7 +168,7 @@ export default function ArtistDetails( { user }) {
           </div>
           <div className="w-full flex justify-between">
             <div className="flex flex-col mt-4">
-              {user.duu.slice(0, 5).map((row, index) => (
+              {user.duu.slice(0, showSongs).map((row, index) => (
                 <ol
                   className="relative left-20 flex items-center text-white"
                   key={index}
@@ -202,7 +205,7 @@ export default function ArtistDetails( { user }) {
           onClick={clickSeeMore}
           className={
             seeMoreStyle
-              ? "text-gray-400 hover:text-white relative text-sm font-semibold right-[79%] top-[27%] cursor-default"
+              ? "text-gray-400 hover:text-white relative text-sm font-semibold right-[79%] top-[18.5%] cursor-default"
               : "text-gray-400 hover:text-white relative text-sm font-semibold right-[79%] bottom-[6%] cursor-default"
           }
         >
