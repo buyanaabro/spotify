@@ -15,6 +15,7 @@
   ],
   "rootMainFiles": [],
   "pages": {
+<<<<<<< HEAD
     "/": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -24,6 +25,12 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/Home.js"
+=======
+    "/Search": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Search.js"
+>>>>>>> refs/remotes/origin/main
     ],
     "/_app": [
       "static/chunks/webpack.js",
