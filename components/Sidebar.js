@@ -1,17 +1,19 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
+import { playList } from "@/pages/Playlistdata";
 
 function Sidebar() {
   const [playlists, setPlayLists] = useState([]);
   const router = useRouter();
+  const [myPlayListNumber, setMyPlayListNumber] = useState({MyPLayList: 0})
   const addToPlaylist = () => {
     setPlayLists([
       ...playlists,
       {
         label: "Playlist",
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa5Z11CZTMkvsu0yzbg2XxyKrR5A45QLrEaw&usqp=CAU",
-        name: "MyPlaylist#",
+        name: setMyPlayListNumber({MyPlayList: myPlayListNumber + 1}),
       },
     ]);
     console.log("first");
