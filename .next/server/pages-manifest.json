@@ -2,11 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-<<<<<<< HEAD
   "/Home": "pages/Home.js",
-  "/[id]": "pages/[id].js",
-  "/Search": "pages/Search.js"
-=======
-  "/Home": "pages/Home.js"
->>>>>>> refs/remotes/origin/main
+  "/[id]": "pages/[id].js"
 }
