@@ -45,7 +45,7 @@ const Artists = () => {
           </div>
           <div className="w-full h-72 flex justify-center items-center">
             <div className="w-11/12 h-72 grid grid-cols-6 gap-5 ml-4">
-              {data.slice(7, 12).map((row, index) => (
+              {data.slice(4, 10).map((row, index) => (
                 <Card key={index} row={row} />
               ))}
             </div>
