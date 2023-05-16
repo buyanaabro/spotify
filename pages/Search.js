@@ -2,7 +2,7 @@ import React from "react";
 import Sidebar from "../components/Sidebar";
 import SearchHeader from "../components/SearchHeader";
 import Footer from "../components/Footer";
-import Footer2 from "./Footer2";
+import Footer2 from "@/components/Footer2";
 import SearchBody from "../components/SearchBody";
 
 export default function Search() {
