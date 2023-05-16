@@ -20,11 +20,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/ArtistDetails.js"
     ],
-    "/Home": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/Home.js"
-    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
