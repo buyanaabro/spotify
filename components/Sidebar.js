@@ -78,9 +78,12 @@ function Sidebar() {
           <button className="ml-4 text-sm">Your library</button>
         </div>
       </div>
-      <div className="w-50 h-20 space-y-3 mr-6">
+      <div className="w-40 h-full space-y-3 mr-6">
         {" "}
-        <button className="w-40 h-7 mt-10 flex items-center flex-row text-gray-400 duration-300">
+        <button
+          className="w-40 h-7 mt-10 flex items-center flex-row text-gray-400 duration-300"
+          onClick={addToPlaylist}
+        >
           <div className="w-6 h-6 bg-gray-400 hover:bg-white duration-300 rounded-sm hover:text-white text-sm font-medium">
             <svg
               xmlns="http://www.w3.org/2000/svg"
