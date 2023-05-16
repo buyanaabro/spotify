@@ -15,10 +15,20 @@
   ],
   "rootMainFiles": [],
   "pages": {
+    "/Home": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Home.js"
+    ],
     "/Search": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/Search.js"
+    ],
+    "/[id]": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/[id].js"
     ],
     "/_app": [
       "static/chunks/webpack.js",

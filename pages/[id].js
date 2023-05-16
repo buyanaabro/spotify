@@ -10,7 +10,15 @@ import Footer2 from "../components/Footer2";
 import Card from "@/components/Card";
 import Song_Card from "@/components/SongCard";
 
-export default function ArtistDetails() {
+export async function getServerSideProps(context) {
+  const user = data.find((e) => e.singer == context.query.id);
+  console.log(user)
+  return {
+      props: { user },
+  };
+}
+
+export default function ArtistDetails( { user }) {
   const router = useRouter();
   const [follow, setFollow] = useState();
   const [followStyle, setFollowStyle] = useState(false);
@@ -86,7 +94,7 @@ export default function ArtistDetails() {
       >
         <div
           className="w-[85.7vw] h-[40vh] bg-cover bg-center flex flex-col"
-          style={{ backgroundImage: `url(${data[0].cover})`, opacity: opacity }}
+          style={{ backgroundImage: `url(${user.cover})`, opacity: opacity }}
         >
           <div className="pt-44 pl-14">
             <div className="flex flex-row items-center text-white text-xs">
@@ -94,7 +102,7 @@ export default function ArtistDetails() {
               <div className="ml-2">Verified Artist</div>
             </div>
             <div className="text-white text-[600%] mt-[-2vh] font-bold">
-              {data[0].singer}
+              {user.singer}
             </div>
             <div className="text-white mt-2">393,835 monthly listeners</div>
           </div>
@@ -157,7 +165,7 @@ export default function ArtistDetails() {
           </div>
           <div className="w-full flex justify-between">
             <div className="flex flex-col mt-4">
-              {data[0].duu.slice(0, 5).map((row, index) => (
+              {user.duu.slice(0, 5).map((row, index) => (
                 <ol
                   className="relative left-20 flex items-center text-white"
                   key={index}
@@ -180,7 +188,7 @@ export default function ArtistDetails() {
               ))}
             </div>
             <div className="flex flex-col justify-evenly mr-20">
-              {data[0].songdur.slice(0, 5).map((row, index) => (
+              {user.songdur.slice(0, 5).map((row, index) => (
                 <div key={index}>
                   <div className="text-gray-400 font-light text-sm m-2">
                     {row}
