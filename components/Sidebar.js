@@ -1,20 +1,22 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React, { useState } from "react";
 
 function Sidebar() {
   const [playlists, setPlayLists] = useState([]);
-
+  const router = useRouter();
   const addToPlaylist = () => {
     setPlayLists([
       ...playlists,
       {
         label: "Playlist",
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa5Z11CZTMkvsu0yzbg2XxyKrR5A45QLrEaw&usqp=CAU",
-        name: "My Playlist#",
+        name: "MyPlaylist#",
       },
     ]);
     console.log("first");
   };
+
   return (
     <div className="w-60 h-full fixed bg-black left-0 top-0 flex flex-col items-center space-y-5 z-50">
       <div className="w-32 h-12 bg-contain bg-no-repeat mt-6 mr-16">
@@ -105,6 +107,7 @@ function Sidebar() {
         </button>
         {playlists.map((row, index) => (
           <button
+            onClick={() => router.push(`/playlist/${row.name}`)}
             key={index}
             className="w-40 text-gray-400 hover:text-white duration-300"
           >
