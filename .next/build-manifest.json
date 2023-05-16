@@ -16,14 +16,17 @@
   "rootMainFiles": [],
   "pages": {
     "/Home": [
+<<<<<<< HEAD
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/Home.js"
     ],
     "/Search": [
+=======
+>>>>>>> refs/remotes/origin/main
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/Search.js"
+      "static/chunks/pages/Home.js"
     ],
     "/[id]": [
       "static/chunks/webpack.js",
