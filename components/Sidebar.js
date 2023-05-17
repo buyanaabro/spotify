@@ -1,20 +1,23 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { playList } from "@/pages/Playlistdata";
 
 function Sidebar() {
   const [playlists, setPlayLists] = useState([]);
   const router = useRouter();
+  const [myPlayListNumber, setMyPlayListNumber] = useState(1);
   const addToPlaylist = () => {
     setPlayLists([
       ...playlists,
       {
+        hu: setMyPlayListNumber((myPlayListNumber) => myPlayListNumber + 1),
+        number: myPlayListNumber,
         label: "Playlist",
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa5Z11CZTMkvsu0yzbg2XxyKrR5A45QLrEaw&usqp=CAU",
-        name: "MyPlaylist#",
+        name: "MyPlaylist" + myPlayListNumber,
       },
     ]);
-    console.log("first");
   };
 
   return (
@@ -39,9 +42,9 @@ function Sidebar() {
               d="M13.5 1.515a3 3 0 0 0-3 0L3 5.845a2 2 0 0 0-1 1.732V21a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6h4v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V7.577a2 2 0 0 0-1-1.732l-7.5-4.33z"
             />
           </svg>
-          <Link className="ml-4 text-sm" href="Home">
+          <div className="ml-4 text-sm" onClick={() => router.push("/Home")}>
             Home
-          </Link>
+          </div>
         </div>
         <div className="w-40 h-7 flex items-center flex-row text-gray-400 hover:text-white duration-300 font-medium">
           <svg
@@ -58,9 +61,9 @@ function Sidebar() {
               d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
             />
           </svg>
-          <Link className="ml-4 text-sm" href="Search">
+          <div className="ml-4 text-sm" onClick={() => router.push("/Search")}>
             Search
-          </Link>
+          </div>
         </div>
         <div className="w-40 h-7 flex items-center flex-row text-gray-400 hover:text-white duration-300 font-medium">
           <svg
@@ -81,7 +84,6 @@ function Sidebar() {
         </div>
       </div>
       <div className="w-40 h-full space-y-3 mr-6">
-        {" "}
         <button
           className="w-40 h-7 mt-10 flex items-center flex-row text-gray-400 duration-300"
           onClick={addToPlaylist}
@@ -107,7 +109,7 @@ function Sidebar() {
         </button>
         {playlists.map((row, index) => (
           <button
-            onClick={() => router.push(`/playlist/${row.name}`)}
+            onClick={() => router.push(`/playlist/${row.number}`)}
             key={index}
             className="w-40 text-gray-400 hover:text-white duration-300"
           >
