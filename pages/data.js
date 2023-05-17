@@ -184,7 +184,7 @@ export const data = [
         img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
       },
       {
-        songName: "Эрх дураараа галзуу",
+        songName: "Эрх дураараа",
         img: "https://cdns-images.dzcdn.net/images/cover/8f07364a42d9074afdac7df0a589a328/264x264.jpg"
       },
       {

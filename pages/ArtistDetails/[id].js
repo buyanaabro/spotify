@@ -217,7 +217,7 @@ export default function ArtistDetails({ user }) {
           Popular Releases
         </div>
         <div className="w-full h-full grid grid-cols-6 gap-5 ml-4">
-          {data[0].duu.slice(3, 9).map((row, index) => (
+          {user.duu.slice(3, 9).map((row, index) => (
             <Song_Card key={index} row={row} />
           ))}
         </div>
@@ -232,7 +232,7 @@ export default function ArtistDetails({ user }) {
           </div>
         </div>
         <div className="w-full h-full grid grid-cols-6 gap-5 ml-4">
-          {data[0].duu.slice(3, 9).map((row, index) => (
+          {user.duu.slice(3, 9).map((row, index) => (
             <Song_Card key={index} row={row} />
           ))}
         </div>
@@ -247,7 +247,7 @@ export default function ArtistDetails({ user }) {
           </div>
         </div>
         <div className="w-full h-full grid grid-cols-6 gap-5 ml-4">
-          {data[0].duu.slice(3, 9).map((row, index) => (
+          {user.duu.slice(3, 9).map((row, index) => (
             <Song_Card key={index} row={row} />
           ))}
         </div>
@@ -255,14 +255,14 @@ export default function ArtistDetails({ user }) {
       <div className="flex flex-col justify-center w-[85.7vw] h-[40vh] bg-[#121212] relative left-[14.3vw]">
         <div className="flex items-center justify-between">
           <div className="text-white text-2xl font-semibold mr-6 ml-6 mb-6">
-            Featuring {data[0].singer}
+            Featuring {user.singer}
           </div>
           <div className="text-gray-400 text-sm font-semibold mr-6 cursor-pointer hover:underline">
             See discography
           </div>
         </div>
         <div className="w-full h-full grid grid-cols-6 gap-5 ml-4">
-          {data[0].duu.slice(3, 9).map((row, index) => (
+          {user.duu.slice(3, 9).map((row, index) => (
             <Song_Card key={index} row={row} />
           ))}
         </div>
