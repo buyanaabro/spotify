@@ -2,5 +2,9 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+<<<<<<< HEAD
   "/Genre": "pages/Genre.js"
+=======
+  "/Login": "pages/Login.js"
+>>>>>>> a313661391982973098797ddd624c24a6369210b
 }

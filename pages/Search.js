@@ -1,9 +1,18 @@
+<<<<<<< HEAD
 import SearchHeader from "@/components/SearchHeader";
 import Sidebar from "@/components/Sidebar";
 import Footer from "@/components/Footer";
 import Footer2 from "../components/Footer2";
 import SearchBody from "@/components/SearchBody";
 
+=======
+import React from "react";
+import Sidebar from "../components/Sidebar";
+import SearchHeader from "../components/SearchHeader";
+import Footer from "../components/Footer";
+import Footer2 from "@/components/Footer2";
+import SearchBody from "../components/SearchBody";
+>>>>>>> a313661391982973098797ddd624c24a6369210b
 
 export default function Search() {
   return (

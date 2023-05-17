@@ -1,8 +1,11 @@
 import React from "react";
+import { useRouter } from "next/router";
 
 export default function Card({ row }) {
+  const router = useRouter()
+
   return (
-    <button className="bg-[#171717] group rounded-lg flex flex-col font-mono items-center hover:bg-[#303030] duration-300">
+    <button onClick={(e) => router.push(`/ArtistDetails/${row.singer}`)} className="bg-[#171717] group rounded-lg flex flex-col font-mono items-center hover:bg-[#303030] duration-300">
       <div
         className={`w-11/12 h-48 bg-white mt-2 drop-shadow-2xl rounded-lg bg-cover flex justify-end items-end`}
         style={{ backgroundImage: `url(${row.cover})` }}
@@ -19,4 +22,13 @@ export default function Card({ row }) {
       </div>
     </button>
   );
+}
+
+export async function getServerSideProps(context) {
+  const usersData = await fetch("https://jsonplaceholder.typicode.com/users")
+  const usersJson = await usersData.json();
+  const user = usersJson.find((e) => e.id == context.query.username);
+  return {
+      props: {user},
+  };
 }

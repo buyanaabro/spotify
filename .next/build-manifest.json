@@ -15,10 +15,17 @@
   ],
   "rootMainFiles": [],
   "pages": {
+<<<<<<< HEAD
     "/Genre": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/Genre.js"
+=======
+    "/Login": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Login.js"
+>>>>>>> a313661391982973098797ddd624c24a6369210b
     ],
     "/_app": [
       "static/chunks/webpack.js",

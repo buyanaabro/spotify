@@ -33,7 +33,7 @@ export const data = [
         img: "https://cdns-images.dzcdn.net/images/cover/f5ed69f0a6264be087f087fc63284fe4/264x264.jpg"
       },
       {
-        songName: "Зүрхэндээ сонс...",
+        songName: "Зүрхэндээ сонс",
         img: "https://images.genius.com/227b76b7d787e11b7680bd4c535cf094.1000x1000x1.jpg"
       },
       {
@@ -81,7 +81,7 @@ export const data = [
     yt: "https://www.youtube.com/channel/UCWF6J9vWH2e9NXCr5NMDUtw",
   },
   {
-    singer: "vandebo",
+    singer: "VANDEBO",
     link: "vandebo.html",
     photo: "vandebo.jpg",
     cover:
@@ -90,18 +90,45 @@ export const data = [
     sub: 105562,
     cat: "Хамтлаг",
     duu: [
-      "Too Deep",
-      "Чамин юм",
-      "Галт тэрэг",
-      "Хайр",
-      "Хүүхдийн 100",
-      "Намайг тоо",
-      "Сайн бодож үзсэн үү",
-      "Унана",
-      "Haru Haru",
-      "Ayo",
-      "18 Savage",
-      "Зогсохгүй",
+      { songName: "Too Deep",
+        img: "https://cdns-images.dzcdn.net/images/cover/8f07364a42d9074afdac7df0a589a328/264x264.jpg"
+      },
+      {
+        songName: "Чамин юм",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Галт тэрэг",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Хайр",
+        img: "https://cdns-images.dzcdn.net/images/cover/8f07364a42d9074afdac7df0a589a328/264x264.jpg"
+      },
+      {
+        songName: "Хүүхдийн 100",
+        img: "https://i.ytimg.com/vi/oc16WZJYVOE/maxresdefault.jpg"
+      },
+      {
+        songName: "Намайг тоо",
+        img: "https://cdns-images.dzcdn.net/images/cover/f5ed69f0a6264be087f087fc63284fe4/264x264.jpg"
+      },
+      {
+        songName: "Унана",
+        img: "https://images.genius.com/227b76b7d787e11b7680bd4c535cf094.1000x1000x1.jpg"
+      },
+      {
+        songName: "Haru Haru",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Ayo",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "18 Savage",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
     ],
     mp3: [
       "Too Deep.mp3",
@@ -136,7 +163,7 @@ export const data = [
     yt: "https://www.youtube.com/Vandebo",
   },
   {
-    singer: "sash",
+    singer: "SASH",
     link: "sash.html",
     photo: "sash.jpg",
     cover:
@@ -145,17 +172,45 @@ export const data = [
     sub: 10650,
     cat: "Соло артист",
     duu: [
-      "6",
-      "Баяртай",
-      "Чи",
-      "Эрх дураараа галзуу",
-      "Гоо",
-      "Нисванис",
-      "Rari",
-      "Close to you",
-      "Цонхон доор",
-      "Мөнгө",
-      "Зайсан",
+      { songName: "6",
+        img: "https://cdns-images.dzcdn.net/images/cover/8f07364a42d9074afdac7df0a589a328/264x264.jpg"
+      },
+      {
+        songName: "Баяртай",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Чи",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Эрх дураараа",
+        img: "https://cdns-images.dzcdn.net/images/cover/8f07364a42d9074afdac7df0a589a328/264x264.jpg"
+      },
+      {
+        songName: "Гоо",
+        img: "https://i.ytimg.com/vi/oc16WZJYVOE/maxresdefault.jpg"
+      },
+      {
+        songName: "Нисванис",
+        img: "https://cdns-images.dzcdn.net/images/cover/f5ed69f0a6264be087f087fc63284fe4/264x264.jpg"
+      },
+      {
+        songName: "Rari",
+        img: "https://images.genius.com/227b76b7d787e11b7680bd4c535cf094.1000x1000x1.jpg"
+      },
+      {
+        songName: "Close to you",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Цонхон доор",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Мөнгө",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
     ],
     mp3: [
       "6.mp3",
@@ -188,7 +243,7 @@ export const data = [
     yt: "https://www.youtube.com/channel/UCoWRFzQleLwAt_wdNDLxikg",
   },
   {
-    singer: "choijoo",
+    singer: "CHOIJOO",
     link: "choijoo.html",
     photo: "choijoo2.jpg",
     name: "Чойжоо",
@@ -197,16 +252,45 @@ export const data = [
     sub: 24972,
     cat: "Соло артист",
     duu: [
-      "Хаврын ганц улиас",
-      "Салхинд шивнэх үгс",
-      "Чамд үлдээе",
-      "Хүрч чадахгүй",
-      "Sain bisx",
-      "Минийх",
-      "Маргааш бороотой",
-      "Энэ дууг минь дуусахаас өмнө",
-      "Ахин дахин дурламаар",
-      "1001 Цэцэгс",
+      { songName: "Хаврын ганц улиас",
+        img: "https://cdns-images.dzcdn.net/images/cover/8f07364a42d9074afdac7df0a589a328/264x264.jpg"
+      },
+      {
+        songName: "Салхинд шивнэх үгс",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Чамд үлдээе",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Хүрч чадахгүй",
+        img: "https://cdns-images.dzcdn.net/images/cover/8f07364a42d9074afdac7df0a589a328/264x264.jpg"
+      },
+      {
+        songName: "Sain bish",
+        img: "https://i.ytimg.com/vi/oc16WZJYVOE/maxresdefault.jpg"
+      },
+      {
+        songName: "Минийх",
+        img: "https://cdns-images.dzcdn.net/images/cover/f5ed69f0a6264be087f087fc63284fe4/264x264.jpg"
+      },
+      {
+        songName: "Маргааш бороотой",
+        img: "https://images.genius.com/227b76b7d787e11b7680bd4c535cf094.1000x1000x1.jpg"
+      },
+      {
+        songName: "Энэ дууг минь дуусахаас өмнө",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Ахин дахин дурламаар",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "1001 Цэцэгс",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
     ],
     mp3: [
       "Havriin gants ulias.mp3",
@@ -237,7 +321,7 @@ export const data = [
     yt: "https://www.youtube.com/channel/UCKH5OVAgjgAL_CRq__9olNA",
   },
   {
-    singer: "ginjin",
+    singer: "GINJIN",
     link: "ginjin.html",
     photo: "ginjin.jpg",
     cover:
@@ -246,16 +330,45 @@ export const data = [
     sub: 106340,
     cat: "Соло артист",
     duu: [
-      "So Cold",
-      "Arasso",
-      "Энэ мөч",
-      "Ganbei",
-      "Missed call",
-      "Өнөөдөр",
-      "ATM",
-      "Birthday",
-      "Биеэ Даа",
-      "Бороо",
+      { songName: "So Cold",
+        img: "https://cdns-images.dzcdn.net/images/cover/8f07364a42d9074afdac7df0a589a328/264x264.jpg"
+      },
+      {
+        songName: "Arasso",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Энэ мөч",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Ganbei",
+        img: "https://cdns-images.dzcdn.net/images/cover/8f07364a42d9074afdac7df0a589a328/264x264.jpg"
+      },
+      {
+        songName: "Missed call",
+        img: "https://i.ytimg.com/vi/oc16WZJYVOE/maxresdefault.jpg"
+      },
+      {
+        songName: "Өнөөдөр",
+        img: "https://cdns-images.dzcdn.net/images/cover/f5ed69f0a6264be087f087fc63284fe4/264x264.jpg"
+      },
+      {
+        songName: "ATM",
+        img: "https://images.genius.com/227b76b7d787e11b7680bd4c535cf094.1000x1000x1.jpg"
+      },
+      {
+        songName: "Birthday",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Биеэ Даа",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Бороо",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
     ],
     mp3: [
       "So Cold.mp3",
@@ -286,7 +399,7 @@ export const data = [
     yt: "https://www.youtube.com/ginjin",
   },
   {
-    singer: "nene",
+    singer: "NENE",
     link: "nene.html",
     photo: "nene.jpg",
     cover:
@@ -295,14 +408,37 @@ export const data = [
     sub: 64730,
     cat: "Соло артист",
     duu: [
-      "Үнэндээ",
-      "Час Тас",
-      "Too shy",
-      "Sugar Mama",
-      "Bon'o Bon",
-      "T.K.O",
-      "One Shot",
-      "Үс Цайтал Хамт",
+      { songName: "Үнэндээ",
+        img: "https://cdns-images.dzcdn.net/images/cover/8f07364a42d9074afdac7df0a589a328/264x264.jpg"
+      },
+      {
+        songName: "Час Тас",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Too shy",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Sugar Mama",
+        img: "https://cdns-images.dzcdn.net/images/cover/8f07364a42d9074afdac7df0a589a328/264x264.jpg"
+      },
+      {
+        songName: "Bon'o Bon",
+        img: "https://i.ytimg.com/vi/oc16WZJYVOE/maxresdefault.jpg"
+      },
+      {
+        songName: "T.K.O",
+        img: "https://cdns-images.dzcdn.net/images/cover/f5ed69f0a6264be087f087fc63284fe4/264x264.jpg"
+      },
+      {
+        songName: "One Shot",
+        img: "https://images.genius.com/227b76b7d787e11b7680bd4c535cf094.1000x1000x1.jpg"
+      },
+      {
+        songName: "Үс Цайтал Хамт",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
     ],
     mp3: [
       "Unendee.mp3",
@@ -329,7 +465,7 @@ export const data = [
     yt: "https://www.youtube.com/channel/UCYQw8fuo5_wGgegFbweiM7Q",
   },
   {
-    singer: "rokit bay",
+    singer: "ROKIT BAY",
     link: "rokitbay.html",
     photo: "rokitbay2.jpg",
     cover:
@@ -338,17 +474,49 @@ export const data = [
     sub: 88756,
     cat: "Соло артист",
     duu: [
-      "Эвдэрхий Хүн",
-      "Сахилга Сул",
-      "Нэг Өдрийн Хаан",
-      "Чөтгөрийн PR",
-      "Бид Хоёр",
-      "Хязгааргүй",
-      "Бор арьст гаамп",
-      "Орилоон",
-      "Хоосон зай",
-      "Зугаатай байлаа",
-      "Үүлэн домог",
+      { songName: "Эвдэрхий Хүн",
+        img: "https://cdns-images.dzcdn.net/images/cover/8f07364a42d9074afdac7df0a589a328/264x264.jpg"
+      },
+      {
+        songName: "Сахилга Сул",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Нэг Өдрийн Хаан",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Чөтгөрийн PR",
+        img: "https://cdns-images.dzcdn.net/images/cover/8f07364a42d9074afdac7df0a589a328/264x264.jpg"
+      },
+      {
+        songName: "Бид Хоёр",
+        img: "https://i.ytimg.com/vi/oc16WZJYVOE/maxresdefault.jpg"
+      },
+      {
+        songName: "Хязгааргүй",
+        img: "https://cdns-images.dzcdn.net/images/cover/f5ed69f0a6264be087f087fc63284fe4/264x264.jpg"
+      },
+      {
+        songName: "Бор арьст гаамп",
+        img: "https://images.genius.com/227b76b7d787e11b7680bd4c535cf094.1000x1000x1.jpg"
+      },
+      {
+        songName: "Орилоон",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Хоосон зай",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Зугаатай байлаа",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Үүлэн домог",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
     ],
     mp3: [
       "Эвдэрхий хүн.mp3",
@@ -381,7 +549,7 @@ export const data = [
     yt: "https://www.youtube.com/channel/UCIgJUusl6itFNLTBy5W8ecw",
   },
   {
-    singer: "nisvanis",
+    singer: "NISVANIS",
     link: "nisvanis.html",
     photo: "nisvanis.jpg",
     cover:
@@ -390,17 +558,49 @@ export const data = [
     sub: 909,
     cat: "Хамтлаг",
     duu: [
-      "Муу зуршил",
-      "Улаан хэрүүлч",
-      "Аз жаргалтай төгсдөг",
-      "Нэргүй дуу",
-      "Эсрэг утгаар нь",
-      "Миний нирвана",
-      "Цаг хугацаа бүгдийг эмчилнэ",
-      "Сэтгэл хөдөлнө",
-      "Нисдэг таваг",
-      "Хэзээ нэгэн цагт бид нисэж магадүй",
-      "Зугаатай байлаа",
+      { songName: "Муу зуршил",
+        img: "https://cdns-images.dzcdn.net/images/cover/8f07364a42d9074afdac7df0a589a328/264x264.jpg"
+      },
+      {
+        songName: "Улаан хэрүүлч",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Аз жаргалтай төгсдөг",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Эсрэг утгаар нь",
+        img: "https://cdns-images.dzcdn.net/images/cover/8f07364a42d9074afdac7df0a589a328/264x264.jpg"
+      },
+      {
+        songName: "Нэргүй дуу",
+        img: "https://i.ytimg.com/vi/oc16WZJYVOE/maxresdefault.jpg"
+      },
+      {
+        songName: "Миний нирвана",
+        img: "https://cdns-images.dzcdn.net/images/cover/f5ed69f0a6264be087f087fc63284fe4/264x264.jpg"
+      },
+      {
+        songName: "Цаг хугацаа бүгдийг эмчилнэ",
+        img: "https://images.genius.com/227b76b7d787e11b7680bd4c535cf094.1000x1000x1.jpg"
+      },
+      {
+        songName: "Сэтгэл хөдөлнө",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Нисдэг таваг",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Зугаатай байлаа",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Хэзээ нэгэн цагт бид нисэж магадүй",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
     ],
     mp3: [
       "Муу Зуршил.mp3",
@@ -433,7 +633,7 @@ export const data = [
     yt: "https://www.youtube.com/channel/UCpIFwbc5DQSg18Wts7kVcVA",
   },
   {
-    singer: "bold",
+    singer: "BOLD",
     link: "bold.html",
     photo: "bold.jpg",
     cover:
@@ -442,17 +642,49 @@ export const data = [
     sub: 124692,
     cat: "Соло артист",
     duu: [
-      "One Shot",
-      "Яаж чи өөрчилвөө",
-      "Чи надад дурлаасай",
-      "Хайртай хүнийхээ гар луу гүйгээрэй",
-      "Ayo",
-      "Нүд чинь хайр харуулна",
-      "Бидний амьдардаг ертөнц",
-      "Удаанаар",
-      "Чамд сонсогдож байна уу",
-      "ДААМ",
-      "Үүлэн Домог",
+      { songName: "One Shot",
+        img: "https://cdns-images.dzcdn.net/images/cover/8f07364a42d9074afdac7df0a589a328/264x264.jpg"
+      },
+      {
+        songName: "Яаж чи өөрчилвөө",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Чи надад дурлаасай",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Хайртай хүнийхээ гар луу гүйгээрэй",
+        img: "https://cdns-images.dzcdn.net/images/cover/8f07364a42d9074afdac7df0a589a328/264x264.jpg"
+      },
+      {
+        songName: "Ayo",
+        img: "https://i.ytimg.com/vi/oc16WZJYVOE/maxresdefault.jpg"
+      },
+      {
+        songName: "Нүд чинь хайр харуулна",
+        img: "https://cdns-images.dzcdn.net/images/cover/f5ed69f0a6264be087f087fc63284fe4/264x264.jpg"
+      },
+      {
+        songName: "Бидний амьдардаг ертөнц",
+        img: "https://images.genius.com/227b76b7d787e11b7680bd4c535cf094.1000x1000x1.jpg"
+      },
+      {
+        songName: "Удаанаар",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Чамд сонсогдож байна уу",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "ДААМ",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Үүлэн Домог",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
     ],
     mp3: [
       "One Shot.mp3",
@@ -485,7 +717,7 @@ export const data = [
     yt: "https://www.youtube.com/channel/UCrEwWFYZ0uvQtDCwCbBrV2w",
   },
   {
-    singer: "thunder",
+    singer: "THUNDER",
     link: "thunder.html",
     photo: "thunder.jpg",
     cover:
@@ -494,18 +726,53 @@ export const data = [
     sub: 227801,
     cat: "Соло артист",
     duu: [
-      "Нэг л үхнэ",
-      "Байгаагаар минь хүлээн авах уу",
-      "Дандаа даардаг охин",
-      "Оюутан",
-      "Би чиний найз залуу байж болох уу",
-      "Эр хүн шиг эр хүн бай",
-      "EX болмооргүй байна",
-      "Cool Aav",
-      "Дүүргэ",
-      "Ганцхан шалтгаан",
-      "I am a Man",
-      "M.O.M.M.Y",
+      { songName: "Нэг л үхнэ",
+        img: "https://cdns-images.dzcdn.net/images/cover/8f07364a42d9074afdac7df0a589a328/264x264.jpg"
+      },
+      {
+        songName: "Байгаагаар минь хүлээн авах уу",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Дандаа даардаг охин",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Оюутан",
+        img: "https://cdns-images.dzcdn.net/images/cover/8f07364a42d9074afdac7df0a589a328/264x264.jpg"
+      },
+      {
+        songName: "Би чиний найз залуу байж болох уу",
+        img: "https://i.ytimg.com/vi/oc16WZJYVOE/maxresdefault.jpg"
+      },
+      {
+        songName: "Эр хүн шиг эр хүн бай",
+        img: "https://cdns-images.dzcdn.net/images/cover/f5ed69f0a6264be087f087fc63284fe4/264x264.jpg"
+      },
+      {
+        songName: "EX болмооргүй байна",
+        img: "https://images.genius.com/227b76b7d787e11b7680bd4c535cf094.1000x1000x1.jpg"
+      },
+      {
+        songName: "Cool Aav",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Дүүргэ",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "Ганцхан шалтгаан",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "I am a Man",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
+      {
+        songName: "M.O.M.M.Y",
+        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg"
+      },
     ],
     mp3: [
       "Neg l Uhne.mp3",
@@ -539,4 +806,4 @@ export const data = [
     ig: "https://www.instagram.com/thunderzrapper/?hl=en",
     yt: "https://www.youtube.com/channel/UCSYAYTS8OwlknJMOmKXSB9g",
   },
-];
+];  

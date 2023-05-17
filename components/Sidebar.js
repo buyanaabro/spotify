@@ -1,21 +1,25 @@
 import Link from "next/link";
-import React, { useState } from "react";
-import styles from "@/styles/Home.module.css";
+import { useRouter } from "next/router";
+import React, { useEffect, useState } from "react";
+import { playList } from "@/pages/Playlistdata";
 
 function Sidebar() {
   const [playlists, setPlayLists] = useState([]);
-
+  const router = useRouter();
+  const [myPlayListNumber, setMyPlayListNumber] = useState(0)
   const addToPlaylist = () => {
     setPlayLists([
       ...playlists,
       {
+        number: 1,
         label: "Playlist",
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa5Z11CZTMkvsu0yzbg2XxyKrR5A45QLrEaw&usqp=CAU",
-        name: "My Playlist#",
+        name: "MyPlaylist" + setMyPlayListNumber((myPlayListNumber) => myPlayListNumber + 1),
       },
     ]);
-    console.log("first");
+    console.log(setMyPlayListNumber((myPlayListNumber) => myPlayListNumber + 1));
   };
+
   return (
     <div className="w-60 h-full fixed bg-black left-0 top-0 flex flex-col items-center space-y-5 z-50">
       <div className="w-32 h-12 bg-contain bg-no-repeat mt-6 mr-16">
@@ -79,9 +83,12 @@ function Sidebar() {
           <button className="ml-4 text-sm">Your library</button>
         </div>
       </div>
-      <div className="w-50 h-20 space-y-3 mr-6">
+      <div className="w-40 h-full space-y-3 mr-6">
         {" "}
-        <button className="w-40 h-7 mt-10 flex items-center flex-row text-gray-400 duration-300">
+        <button
+          className="w-40 h-7 mt-10 flex items-center flex-row text-gray-400 duration-300"
+          onClick={addToPlaylist}
+        >
           <div className="w-6 h-6 bg-gray-400 hover:bg-white duration-300 rounded-sm hover:text-white text-sm font-medium">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -103,6 +110,7 @@ function Sidebar() {
         </button>
         {playlists.map((row, index) => (
           <button
+            onClick={() => router.push(`/Playlist/${row.number}`)}
             key={index}
             className="w-40 text-gray-400 hover:text-white duration-300"
           >
