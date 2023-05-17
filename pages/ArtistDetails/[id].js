@@ -1,24 +1,24 @@
 import React from "react";
-import { data } from "./data";
+import { data } from "../data";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Sidebar from "@/components/Sidebar";
 import Header from "@/components/Header";
 import { useRouter } from "next/router";
 import Footer from "@/components/Footer";
-import Footer2 from "../components/Footer2";
+import Footer2 from "../../components/Footer2";
 import Card from "@/components/Card";
 import Song_Card from "@/components/SongCard";
 
 export async function getServerSideProps(context) {
   const user = data.find((e) => e.singer == context.query.id);
-  console.log(user)
+  console.log(user);
   return {
-      props: { user },
+    props: { user },
   };
 }
 
-export default function ArtistDetails( { user }) {
+export default function ArtistDetails({ user }) {
   const router = useRouter();
   const [follow, setFollow] = useState();
   const [followStyle, setFollowStyle] = useState(false);
@@ -28,7 +28,7 @@ export default function ArtistDetails( { user }) {
   const [main, setMain] = useState(false);
   const [seeMore, setSeeMore] = useState();
   const [seeMoreStyle, setSeeMoreStyle] = useState(false);
-  const [showSongs, setShowSongs] = useState(5)
+  const [showSongs, setShowSongs] = useState(5);
   useEffect(() => {
     setFollow("FOLLOW");
     setSeeMore("See more");
@@ -77,12 +77,12 @@ export default function ArtistDetails( { user }) {
       setMain(true);
       setSeeMore("See less");
       setSeeMoreStyle(true);
-      setShowSongs(10)
+      setShowSongs(10);
     } else {
       setMain(false);
       setSeeMore("See more");
       setSeeMoreStyle(false);
-      setShowSongs(5)
+      setShowSongs(5);
     }
   };
 
@@ -283,11 +283,22 @@ export default function ArtistDetails( { user }) {
         </div>
       </div>
       <div className="w-[85.7vw] h-[70vh] relative left-[14.3vw] bg-[#121212] pl-6 pt-8">
-          <div className="text-white text-2xl font-semibold">About</div>
-          <div className="w-[65%] h-[90%] flex flex-col justify-end bg-cover bg-center rounded-lg text-white p-10" style={{backgroundImage: "url('https://i.ytimg.com/vi/jlpn7-voy9c/maxresdefault.jpg')"}}>
-            <div className="font-semibold">{randomNumber} monthly listeners</div>
-            <div className="w-[80%]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+        <div className="text-white text-2xl font-semibold">About</div>
+        <div
+          className="w-[65%] h-[90%] flex flex-col justify-end bg-cover bg-center rounded-lg text-white p-10"
+          style={{
+            backgroundImage:
+              "url('https://i.ytimg.com/vi/jlpn7-voy9c/maxresdefault.jpg')",
+          }}
+        >
+          <div className="font-semibold">{randomNumber} monthly listeners</div>
+          <div className="w-[80%]">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
           </div>
+        </div>
       </div>
       <Header />
       <Sidebar />
