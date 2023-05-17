@@ -15,17 +15,10 @@
   ],
   "rootMainFiles": [],
   "pages": {
-<<<<<<< HEAD
-    "/Search": [
+    "/Genre": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/Search.js"
-=======
-    "/ArtistDetails": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/ArtistDetails.js"
->>>>>>> e32babb4efd7ed2e845da1f1f9c619720b112c28
+      "static/chunks/pages/Genre.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",
