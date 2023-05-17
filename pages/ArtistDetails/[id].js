@@ -1,24 +1,24 @@
 import React from "react";
-import { data } from "./data";
+import { data } from "../data";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Sidebar from "@/components/Sidebar";
 import Header from "@/components/Header";
 import { useRouter } from "next/router";
 import Footer from "@/components/Footer";
-import Footer2 from "../components/Footer2";
+import Footer2 from "../../components/Footer2";
 import Card from "@/components/Card";
 import Song_Card from "@/components/SongCard";
 
 export async function getServerSideProps(context) {
   const user = data.find((e) => e.singer == context.query.id);
-  console.log(user)
   return {
       props: { user },
   };
 }
 
 export default function ArtistDetails( { user }) {
+  console.log(user)
   const router = useRouter();
   const [follow, setFollow] = useState();
   const [followStyle, setFollowStyle] = useState(false);

@@ -5,7 +5,7 @@ export default function Card({ row }) {
   const router = useRouter()
 
   return (
-    <button onClick={(e) => router.push(`/${row.singer}`)} className="bg-[#171717] group rounded-lg flex flex-col font-mono items-center hover:bg-[#303030] duration-300">
+    <button onClick={(e) => router.push(`/ArtistDetails/${row.singer}`)} className="bg-[#171717] group rounded-lg flex flex-col font-mono items-center hover:bg-[#303030] duration-300">
       <div
         className={`w-11/12 h-48 bg-white mt-2 drop-shadow-2xl rounded-lg bg-cover flex justify-end items-end`}
         style={{ backgroundImage: `url(${row.cover})` }}

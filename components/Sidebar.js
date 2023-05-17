@@ -1,22 +1,23 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { playList } from "@/pages/Playlistdata";
 
 function Sidebar() {
   const [playlists, setPlayLists] = useState([]);
   const router = useRouter();
-  const [myPlayListNumber, setMyPlayListNumber] = useState({MyPLayList: 0})
+  const [myPlayListNumber, setMyPlayListNumber] = useState(0)
   const addToPlaylist = () => {
     setPlayLists([
       ...playlists,
       {
+        number: 1,
         label: "Playlist",
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa5Z11CZTMkvsu0yzbg2XxyKrR5A45QLrEaw&usqp=CAU",
-        name: setMyPlayListNumber({MyPlayList: myPlayListNumber + 1}),
+        name: "MyPlaylist" + setMyPlayListNumber((myPlayListNumber) => myPlayListNumber + 1),
       },
     ]);
-    console.log("first");
+    console.log(setMyPlayListNumber((myPlayListNumber) => myPlayListNumber + 1));
   };
 
   return (
@@ -109,7 +110,7 @@ function Sidebar() {
         </button>
         {playlists.map((row, index) => (
           <button
-            onClick={() => router.push(`/playlist/${row.name}`)}
+            onClick={() => router.push(`/Playlist/${row.number}`)}
             key={index}
             className="w-40 text-gray-400 hover:text-white duration-300"
           >
