@@ -6,7 +6,7 @@ export default function LibraryLink({ category, image }) {
   const [randColor, setRandColor] = useState(uniqolor.random());
   
   return (
-    <Link href="/library">
+    <Link href="/Genre">
       <div
         className="
           contrast-[2] 
