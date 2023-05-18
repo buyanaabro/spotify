@@ -41,6 +41,9 @@ export default function Playlist() {
             <span className="text-white text-2xl font-semibold">
               Let's find something for your playlist
             </span>
+            <div className="w-96 h-10 bg-[#242424] rounded-sm drop-shadow-2xl mt-5 flex items-center">
+              <Search />
+            </div>
           </div>
         </div>
       </div>
@@ -106,6 +109,24 @@ const More = () => {
         strokeLinecap="round"
         strokeLinejoin="round"
         d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+      />
+    </svg>
+  );
+};
+const Search = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className="w-7 h-7 text-gray-400"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
       />
     </svg>
   );
