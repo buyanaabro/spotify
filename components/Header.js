@@ -20,11 +20,11 @@ export default function Header() {
         opacity
           ? "w-full h-16 fixed top-0 bg-black flex flex-row items-center duration-300 z-50"
           : "w-full h-16 fixed top-0 flex flex-row items-center duration-300 z-50"
-      } 
+      }
     >
       {/* style={{background: `rgba(255, 255, 255), ${bgOpacity}`}} */}
       <div className="w-40 h-12 flex flex-row justify-center items-center space-x-5 ml-6">
-        <div className="flex justify-center items-center w-6 h-6 bg-[#121212] rounded-full ml-96">
+        <div className="flex justify-center items-center w-6 h-6  rounded-full ml-96">
           <svg
             className="w-4 h-4 -rotate-90"
             viewBox="0 -4.5 20 20"
@@ -71,7 +71,7 @@ export default function Header() {
             </g>
           </svg>
         </div>
-        <div className="flex justify-center items-center w-6 h-6 bg-[#121212] rounded-full">
+        <div className="flex justify-center items-center w-6 h-6 rounded-full">
           <svg
             className="w-4 h-4 rotate-90"
             viewBox="0 -4.5 20 20"

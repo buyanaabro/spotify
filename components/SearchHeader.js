@@ -23,6 +23,7 @@ export default function Header() {
       } 
     >
       {/* style={{background: `rgba(255, 255, 255), ${bgOpacity}`}} */}
+
       <div className="w-40 h-12 flex flex-row justify-center items-center space-x-5 ml-6">
         <div className="flex justify-center items-center w-6 h-6 bg-[#121212] rounded-full ml-96">
           <svg
@@ -121,6 +122,7 @@ export default function Header() {
         </div>
         
       </div>
+
       <div className="w-2/3 bg-white rounded-full px-4 py-2 flex flex-row justify-center items-center space-x-2 ml-40">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
@@ -129,6 +131,7 @@ export default function Header() {
     </div>
     
       <div className="w-full h-12 flex flex-row space-x-6 justify-end mr-8">
+
         <Link
           href="Signup"
           className="text-gray-400 font-sans hover:text-white text-base flex justify-center items-center hover:scale-105"
@@ -142,7 +145,3 @@ export default function Header() {
     </div>
   );
 }
-
-
-
-

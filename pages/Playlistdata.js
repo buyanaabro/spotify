@@ -4,23 +4,7 @@ export const playList = [
     myPlaylist: [
       {
         songName: "Гүнд",
-        img: "https://cdns-images.dzcdn.net/images/cover/8f07364a42d9074afdac7df0a589a328/264x264.jpg",
-      },
-      {
-        songName: "Хөөрхөн байгаач",
-        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg",
-      },
-      {
-        songName: "Perfect Blue",
-        img: "https://cdns-images.dzcdn.net/images/cover/0c765352c628335dbfdb4bb24980840c/264x264.jpg",
-      },
-      {
-        songName: "Санасан байна",
-        img: "https://cdns-images.dzcdn.net/images/cover/8f07364a42d9074afdac7df0a589a328/264x264.jpg",
-      },
-      {
-        songName: "Үхсэн баас",
-        img: "https://i.ytimg.com/vi/oc16WZJYVOE/maxresdefault.jpg",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa5Z11CZTMkvsu0yzbg2XxyKrR5A45QLrEaw&usqp=CAU",
       },
     ],
   },
@@ -29,12 +13,125 @@ export const playList = [
     myPlaylist: [
       {
         songName: "Санасан байна",
-        img: "https://cdns-images.dzcdn.net/images/cover/8f07364a42d9074afdac7df0a589a328/264x264.jpg",
-      },
-      {
-        songName: "Үхсэн баас",
-        img: "https://i.ytimg.com/vi/oc16WZJYVOE/maxresdefault.jpg",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa5Z11CZTMkvsu0yzbg2XxyKrR5A45QLrEaw&usqp=CAU",
       },
     ],
-  }
-]
+  },
+  {
+    number: 3,
+    myPlaylist: [
+      {
+        songName: "Санасан байна",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa5Z11CZTMkvsu0yzbg2XxyKrR5A45QLrEaw&usqp=CAU",
+      },
+    ],
+  },
+  {
+    number: 4,
+    myPlaylist: [
+      {
+        songName: "Санасан байна",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa5Z11CZTMkvsu0yzbg2XxyKrR5A45QLrEaw&usqp=CAU",
+      },
+    ],
+  },
+  {
+    number: 5,
+    myPlaylist: [
+      {
+        songName: "Санасан байна",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa5Z11CZTMkvsu0yzbg2XxyKrR5A45QLrEaw&usqp=CAU",
+      },
+    ],
+  },
+  {
+    number: 6,
+    myPlaylist: [
+      {
+        songName: "Санасан байна",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa5Z11CZTMkvsu0yzbg2XxyKrR5A45QLrEaw&usqp=CAU",
+      },
+    ],
+  },
+  {
+    number: 7,
+    myPlaylist: [
+      {
+        songName: "Санасан байна",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa5Z11CZTMkvsu0yzbg2XxyKrR5A45QLrEaw&usqp=CAU",
+      },
+    ],
+  },
+  {
+    number: 8,
+    myPlaylist: [
+      {
+        songName: "Санасан байна",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa5Z11CZTMkvsu0yzbg2XxyKrR5A45QLrEaw&usqp=CAU",
+      },
+    ],
+  },
+  {
+    number: 9,
+    myPlaylist: [
+      {
+        songName: "Санасан байна",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa5Z11CZTMkvsu0yzbg2XxyKrR5A45QLrEaw&usqp=CAU",
+      },
+    ],
+  },
+  {
+    number: 10,
+    myPlaylist: [
+      {
+        songName: "Санасан байна",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa5Z11CZTMkvsu0yzbg2XxyKrR5A45QLrEaw&usqp=CAU",
+      },
+    ],
+  },
+  {
+    number: 11,
+    myPlaylist: [
+      {
+        songName: "Санасан байна",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa5Z11CZTMkvsu0yzbg2XxyKrR5A45QLrEaw&usqp=CAU",
+      },
+    ],
+  },
+  {
+    number: 12,
+    myPlaylist: [
+      {
+        songName: "Санасан байна",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa5Z11CZTMkvsu0yzbg2XxyKrR5A45QLrEaw&usqp=CAU",
+      },
+    ],
+  },
+  {
+    number: 13,
+    myPlaylist: [
+      {
+        songName: "Санасан байна",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa5Z11CZTMkvsu0yzbg2XxyKrR5A45QLrEaw&usqp=CAU",
+      },
+    ],
+  },
+  {
+    number: 14,
+    myPlaylist: [
+      {
+        songName: "Санасан байна",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa5Z11CZTMkvsu0yzbg2XxyKrR5A45QLrEaw&usqp=CAU",
+      },
+    ],
+  },
+  {
+    number: 15,
+    myPlaylist: [
+      {
+        songName: "Санасан байна",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa5Z11CZTMkvsu0yzbg2XxyKrR5A45QLrEaw&usqp=CAU",
+      },
+    ],
+  },
+];

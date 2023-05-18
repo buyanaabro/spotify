@@ -22,7 +22,7 @@ export default function Search() {
           <div className="w-40 h-16 flex items-center self-end text-white text-2xl ml-16 font-bold">
               Browse All
             </div>
-            <div className="w-full h-full bg-[#121212] space-x-12">
+            <div className="w-full h-full bg-[#121212] space-x-10">
             <SearchBody />
           </div>
           
