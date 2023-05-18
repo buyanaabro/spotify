@@ -56,18 +56,9 @@ export default function ArtistDetails({ user }) {
   }, []);
 
   useEffect(() => {
-    const headerHeight = 400;
-    const range = 100;
-    const offset = headerHeight / 2;
-
-    const didScrollPage = (e) => {
-      let calc = 1 - (window.scrollY - offset + range) / range;
-      if (calc > 1) {
-        calc = 1;
-      } else if (calc < 0) {
-        calc = 0;
-      }
-      setOpacity(calc);
+    const didScrollPage = () => {
+      if(window.scrollY <= 200)
+        setOpacity(1 - (window.scrollY / 200))
     };
     window.addEventListener("scroll", didScrollPage);
   }, []);
@@ -212,91 +203,93 @@ export default function ArtistDetails({ user }) {
           {seeMore}
         </div>
       </main>
-      <div className="flex flex-col justify-center w-[85.7vw] h-[40vh] bg-[#121212] relative left-[14.3vw]">
-        <div className="text-white text-2xl font-semibold mr-6 ml-6 mb-6">
-          Popular Releases
-        </div>
-        <div className="w-full h-full grid grid-cols-6 gap-5 ml-4">
-          {user.duu.slice(3, 9).map((row, index) => (
-            <Song_Card key={index} row={row} />
-          ))}
-        </div>
-      </div>
-      <div className="flex flex-col justify-center w-[85.7vw] h-[40vh] bg-[#121212] relative left-[14.3vw]">
-        <div className="flex items-center justify-between">
+      <div className="relative left-[14.3vw]">
+        <div className="flex flex-col justify-center w-[85.7vw] h-[40vh] bg-[#121212]">
           <div className="text-white text-2xl font-semibold mr-6 ml-6 mb-6">
-            Albums
+            Popular Releases
           </div>
-          <div className="text-gray-400 text-sm font-semibold mr-6 cursor-pointer hover:underline">
-            See discography
-          </div>
-        </div>
-        <div className="w-full h-full grid grid-cols-6 gap-5 ml-4">
-          {user.duu.slice(3, 9).map((row, index) => (
-            <Song_Card key={index} row={row} />
-          ))}
-        </div>
-      </div>
-      <div className="flex flex-col justify-center w-[85.7vw] h-[40vh] bg-[#121212] relative left-[14.3vw]">
-        <div className="flex items-center justify-between">
-          <div className="text-white text-2xl font-semibold mr-6 ml-6 mb-6">
-            Singles and EPs
-          </div>
-          <div className="text-gray-400 text-sm font-semibold mr-6 cursor-pointer hover:underline">
-            See discography
+          <div className="w-full h-full grid grid-cols-6 gap-5 ml-4">
+            {user.duu.slice(3, 9).map((row, index) => (
+              <Song_Card key={index} row={row} />
+            ))}
           </div>
         </div>
-        <div className="w-full h-full grid grid-cols-6 gap-5 ml-4">
-          {user.duu.slice(3, 9).map((row, index) => (
-            <Song_Card key={index} row={row} />
-          ))}
-        </div>
-      </div>
-      <div className="flex flex-col justify-center w-[85.7vw] h-[40vh] bg-[#121212] relative left-[14.3vw]">
-        <div className="flex items-center justify-between">
-          <div className="text-white text-2xl font-semibold mr-6 ml-6 mb-6">
-            Featuring {user.singer}
+        <div className="flex flex-col justify-center w-[85.7vw] h-[40vh] bg-[#121212]">
+          <div className="flex items-center justify-between">
+            <div className="text-white text-2xl font-semibold mr-6 ml-6 mb-6">
+              Albums
+            </div>
+            <div className="text-gray-400 text-sm font-semibold mr-6 cursor-pointer hover:underline">
+              See discography
+            </div>
           </div>
-          <div className="text-gray-400 text-sm font-semibold mr-6 cursor-pointer hover:underline">
-            See discography
-          </div>
-        </div>
-        <div className="w-full h-full grid grid-cols-6 gap-5 ml-4">
-          {user.duu.slice(3, 9).map((row, index) => (
-            <Song_Card key={index} row={row} />
-          ))}
-        </div>
-      </div>
-      <div className="flex flex-col justify-center w-[85.7vw] h-[40vh] bg-[#121212] relative left-[14.3vw]">
-        <div className="flex items-center justify-between">
-          <div className="text-white text-2xl font-semibold mr-6 ml-6 mb-6">
-            Fans also like
-          </div>
-          <div className="text-gray-400 text-sm font-semibold mr-6 cursor-pointer hover:underline">
-            See discography
+          <div className="w-full h-full grid grid-cols-6 gap-5 ml-4">
+            {user.duu.slice(3, 9).map((row, index) => (
+              <Song_Card key={index} row={row} />
+            ))}
           </div>
         </div>
-        <div className="w-full h-full grid grid-cols-6 gap-5 ml-4">
-          {data.slice(1, 7).map((row, index) => (
-            <Card key={index} row={row} />
-          ))}
+        <div className="flex flex-col justify-center w-[85.7vw] h-[40vh] bg-[#121212]">
+          <div className="flex items-center justify-between">
+            <div className="text-white text-2xl font-semibold mr-6 ml-6 mb-6">
+              Singles and EPs
+            </div>
+            <div className="text-gray-400 text-sm font-semibold mr-6 cursor-pointer hover:underline">
+              See discography
+            </div>
+          </div>
+          <div className="w-full h-full grid grid-cols-6 gap-5 ml-4">
+            {user.duu.slice(3, 9).map((row, index) => (
+              <Song_Card key={index} row={row} />
+            ))}
+          </div>
         </div>
-      </div>
-      <div className="w-[85.7vw] h-[70vh] relative left-[14.3vw] bg-[#121212] pl-6 pt-8">
-        <div className="text-white text-2xl font-semibold">About</div>
-        <div
-          className="w-[65%] h-[90%] flex flex-col justify-end bg-cover bg-center rounded-lg text-white p-10"
-          style={{
-            backgroundImage:
-              "url('https://i.ytimg.com/vi/jlpn7-voy9c/maxresdefault.jpg')",
-          }}
-        >
-          <div className="font-semibold">{randomNumber} monthly listeners</div>
-          <div className="w-[80%]">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
+        <div className="flex flex-col justify-center w-[85.7vw] h-[40vh] bg-[#121212]">
+          <div className="flex items-center justify-between">
+            <div className="text-white text-2xl font-semibold mr-6 ml-6 mb-6">
+              Featuring {user.singer}
+            </div>
+            <div className="text-gray-400 text-sm font-semibold mr-6 cursor-pointer hover:underline">
+              See discography
+            </div>
+          </div>
+          <div className="w-full h-full grid grid-cols-6 gap-5 ml-4">
+            {user.duu.slice(3, 9).map((row, index) => (
+              <Song_Card key={index} row={row} />
+            ))}
+          </div>
+        </div>
+        <div className="flex flex-col justify-center w-[85.7vw] h-[40vh] bg-[#121212]">
+          <div className="flex items-center justify-between">
+            <div className="text-white text-2xl font-semibold mr-6 ml-6 mb-6">
+              Fans also like
+            </div>
+            <div className="text-gray-400 text-sm font-semibold mr-6 cursor-pointer hover:underline">
+              See discography
+            </div>
+          </div>
+          <div className="w-full h-full grid grid-cols-6 gap-5 ml-4">
+            {data.slice(1, 7).map((row, index) => (
+              <Card key={index} row={row} />
+            ))}
+          </div>
+        </div>
+        <div className="w-[85.7vw] h-[70vh] bg-[#121212] pl-6 pt-8">
+          <div className="text-white text-2xl font-semibold">About</div>
+          <div
+            className="w-[65%] h-[90%] flex flex-col justify-end bg-cover bg-center rounded-lg text-white p-10"
+            style={{
+              backgroundImage:
+                "url('https://i.ytimg.com/vi/jlpn7-voy9c/maxresdefault.jpg')",
+            }}
+          >
+            <div className="font-semibold">{randomNumber} monthly listeners</div>
+            <div className="w-[80%]">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of type
+              and scrambled it to make a type specimen book.
+            </div>
           </div>
         </div>
       </div>

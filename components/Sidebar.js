@@ -11,11 +11,11 @@ function Sidebar() {
     setPlayLists([
       ...playlists,
       {
-        hu: setMyPlayListNumber((myPlayListNumber) => myPlayListNumber + 1),
+        hu: setMyPlayListNumber(myPlayListNumber + 1),
         number: myPlayListNumber,
         label: "Playlist",
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa5Z11CZTMkvsu0yzbg2XxyKrR5A45QLrEaw&usqp=CAU",
-        name: "MyPlaylist" + myPlayListNumber,
+        name: "MyPlaylist " + myPlayListNumber,
       },
     ]);
   };
@@ -42,7 +42,7 @@ function Sidebar() {
               d="M13.5 1.515a3 3 0 0 0-3 0L3 5.845a2 2 0 0 0-1 1.732V21a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6h4v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V7.577a2 2 0 0 0-1-1.732l-7.5-4.33z"
             />
           </svg>
-          <div className="ml-4 text-sm" onClick={() => router.push("/Home")}>
+          <div className="ml-4 text-sm cursor-pointer" onClick={() => router.push("/Home")}>
             Home
           </div>
         </div>
@@ -61,7 +61,7 @@ function Sidebar() {
               d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
             />
           </svg>
-          <div className="ml-4 text-sm" onClick={() => router.push("/Search")}>
+          <div className="ml-4 text-sm cursor-pointer" onClick={() => router.push("/Search")}>
             Search
           </div>
         </div>
