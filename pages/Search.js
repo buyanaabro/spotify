@@ -1,18 +1,10 @@
-<<<<<<< HEAD
+
 import SearchHeader from "@/components/SearchHeader";
 import Sidebar from "@/components/Sidebar";
 import Footer from "@/components/Footer";
 import Footer2 from "../components/Footer2";
 import SearchBody from "@/components/SearchBody";
 
-=======
-import React from "react";
-import Sidebar from "../components/Sidebar";
-import SearchHeader from "../components/SearchHeader";
-import Footer from "../components/Footer";
-import Footer2 from "@/components/Footer2";
-import SearchBody from "../components/SearchBody";
->>>>>>> a313661391982973098797ddd624c24a6369210b
 
 export default function Search() {
   return (
@@ -31,7 +23,7 @@ export default function Search() {
           <div className="w-40 h-16 flex items-center self-end text-white text-2xl ml-16 font-bold">
               Browse All
             </div>
-            <div className="w-full h-full bg-[#121212] space-x-12">
+            <div className="w-full h-full bg-[#121212] space-x-10">
             <SearchBody />
           </div>
           

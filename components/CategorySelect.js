@@ -13,13 +13,13 @@ export default function LibraryLink({ category, image }) {
           brightness-[0.87] 
           rounded-xl 
           aspect-square 
-          relative 
           overflow-hidden
+          max-w-[190px] 
         "
         style={{ backgroundColor: randColor.color }}
       >
         {randColor.color &&
-          <div className="text-white pt-3 pl-4 font-semibold text-[23px]">
+          <div className="text-slate-200 pt-3 pl-4 font-semibold text-[23px]">
             {category}
           </div>
         }
