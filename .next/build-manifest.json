@@ -15,10 +15,20 @@
   ],
   "rootMainFiles": [],
   "pages": {
-    "/ArtistDetails/[id]": [
+    "/Genre": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/ArtistDetails/[id].js"
+      "static/chunks/pages/Genre.js"
+    ],
+    "/Home": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Home.js"
+    ],
+    "/Search": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Search.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",
