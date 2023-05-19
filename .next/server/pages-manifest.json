@@ -2,7 +2,15 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+<<<<<<< HEAD
   "/Genre": "pages/Genre.js",
   "/Home": "pages/Home.js",
   "/Search": "pages/Search.js"
+=======
+  "/Home": "pages/Home.js",
+  "/ArtistDetails/[id]": "pages/ArtistDetails/[id].js",
+  "/Search": "pages/Search.js",
+  "/Showall": "pages/Showall.js",
+  "/Genre": "pages/Genre.js"
+>>>>>>> refs/remotes/origin/main
 }

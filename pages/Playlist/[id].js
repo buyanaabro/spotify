@@ -41,8 +41,14 @@ export default function Playlist() {
             <span className="text-white text-2xl font-semibold">
               Let's find something for your playlist
             </span>
-            <div className="w-96 h-10 bg-[#242424] rounded-sm drop-shadow-2xl mt-5 flex items-center">
-              <Search />
+            <div className="w-96 h-10 bg-[#242424] rounded-md drop-shadow-2xl mt-5 flex items-center">
+              <div className="w-10 h-10 flex justify-center items-center">
+                <Search />
+              </div>
+              <input
+                className="w-full h-full flex items-center bg-[#242424] text-white ml-1"
+                placeholder="   Search"
+              ></input>
             </div>
           </div>
         </div>
