@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 export default function Home() {
   const [check, setCheck] = useState(false);
@@ -9,6 +10,7 @@ export default function Home() {
     if (check == false) setCheck(true);
     else setCheck(false);
   };
+  const router = useRouter();
   return (
     <>
       <div className="w-screen h-screen bg-[url('https://assets.nflxext.com/ffe/siteui/vlv3/70805ddd-f38c-4e25-94cd-b5015e444ee0/4ede0716-706b-4794-9fca-4b8b56e8d539/MN-en-20230508-popsignuptwoweeks-perspective_alpha_website_small.jpg')]">
@@ -29,7 +31,10 @@ export default function Home() {
               className="w-[310px] h-[50px] rounded-sm bg-stone-700 outline-none pl-4 m-2"
               placeholder="Password"
             ></input>
-            <button className="w-[310px] h-[50px] bg-red-600 text-white rounded-sm pl-4 m-2 mt-8">
+            <button
+              className="w-[310px] h-[50px] bg-red-600 text-white rounded-sm pl-4 m-2 mt-8"
+              onClick={() => router.push("/Home")}
+            >
               Sign In
             </button>
             <div className="flex items-center m-2">

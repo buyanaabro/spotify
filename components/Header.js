@@ -36,7 +36,7 @@ export default function Header() {
             src="http://www.w3.org/1999/xlink"
             fill="#ffffff"
             stroke="#ffffff"
-            onClick={() => router.push("/Home")}
+            onClick={() => router.back()}
           >
             <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
             <g
