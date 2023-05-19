@@ -6,7 +6,7 @@ export default function SearchBody() {
     <>
       <div className="py-1.5"></div>
 
-      <div className="grid xl:grid-cols-8 lg:grid-cols-7 md:grid-cols-3 sm:grid-cols-2 gap-4">
+      <div className="grid xl:grid-cols-7 lg:grid-cols-7 md:grid-cols-3 sm:grid-cols-2 gap-4">
         <CategorySelect
           category="Podcasts"
           image="https://picsum.photos/id/40/300/300"

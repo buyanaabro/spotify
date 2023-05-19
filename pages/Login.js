@@ -25,8 +25,8 @@ function Login() {
               <button className="w-80 h-12 border border-gray-500 rounded-full  pl-8 py-2 px-10 hover:border-white font-bold flex items-center flex-row">
                 <div>
                   <Image
-                    width="20"
-                    height="20"
+                    width="30"
+                    height="30"
                     src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png"
                   />
                 </div>
@@ -42,15 +42,15 @@ function Login() {
                 </div>
                 <div className="ml-8"> Continue With Facebook</div>
               </button>
-              <button className="w-80 h-12 border border-gray-500 rounded-full  pl-7 py-2 px-10 hover:border-white font-bold flex justify-start items-center flex-row">
+              <button className="w-80 h-12 border border-gray-500 rounded-full  pl-8 py-2 px-10 hover:border-white font-bold flex justify-start items-center flex-row">
                 <div className="flex justify-start items-center h-full w-auto">
                   <Image
-                    width="30"
-                    height="30"
+                    width="15"
+                    height="15"
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Apple_logo_white.svg/1724px-Apple_logo_white.svg.png"
                   />
                 </div>
-                <div className="ml-8"> Continue With Apple</div>
+                <div className="ml-10"> Continue With Apple</div>
               </button>
             </div>
           </div>
@@ -78,20 +78,23 @@ function Login() {
                   placeholder="Password"
                 />
               </label>
-              <Switch
-                checked={enabled}
-                onChange={setEnabled}
-                className={`${
-                  enabled ? "bg-blue-600" : "bg-gray-200"
-                } relative inline-flex h-6 w-11 items-center rounded-full`}
-              >
-                <span className="sr-only">Enable notifications</span>
-                <span
+              <div className="flex items-center mt-4 gap-5">
+                <Switch
+                  checked={enabled}
+                  onChange={setEnabled}
                   className={`${
-                    enabled ? "translate-x-6" : "translate-x-1"
-                  } inline-block h-4 w-4 transform rounded-full bg-white transition`}
-                />
-              </Switch>
+                    enabled ? "bg-[#1ed760]" : "bg-gray-200"
+                  } relative inline-flex h-5 w-10 items-center rounded-full `}
+                >
+                  <span className="sr-only">Enable notifications</span>
+                  <span
+                    className={`${
+                      enabled ? "translate-x-6" : "translate-x-1"
+                    } inline-block h-3 w-3 transform rounded-full bg-black transition`}
+                  />
+                </Switch>
+                <p className="text-white text-center">Remember me</p>
+              </div>
             </div>
             <div className="text-white font-bold flex flex-col justify-center items-start pt-4 text-xs w-auto h-auto mt-4 gap-2">
               <button className="w-80 h-12 rounded-full bg-[#1ed760] text-black hover:scale-105 text-sm">
@@ -101,7 +104,7 @@ function Login() {
                 Forgot your password?
               </button>
 
-              <div className="mt-32 ml-4 flex  justify-center text-gray-400 text-sm">
+              <div className="mt-16 ml-4 flex  justify-center text-gray-400 text-sm">
                 Don't have an account?
                 <Link
                   href="Signup"
