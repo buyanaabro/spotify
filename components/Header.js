@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import Router from "next/router";
+import { useRouter } from "next/router";
 
 export default function Header() {
   const [opacity, setOpacity] = useState(false);
@@ -13,6 +15,7 @@ export default function Header() {
   if (typeof window !== "undefined") {
     window.addEventListener("scroll", changeOpacity);
   }
+  const router = useRouter();
 
   return (
     <div
@@ -33,6 +36,7 @@ export default function Header() {
             src="http://www.w3.org/1999/xlink"
             fill="#ffffff"
             stroke="#ffffff"
+            onClick={() => router.push("/Home")}
           >
             <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
             <g

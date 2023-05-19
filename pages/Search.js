@@ -4,7 +4,6 @@ import Footer from "@/components/Footer";
 import Footer2 from "../components/Footer2";
 import SearchBody from "@/components/SearchBody";
 
-
 export default function Search() {
   return (
     <>
@@ -12,20 +11,17 @@ export default function Search() {
         <div className="w-64 h-full bg-white">
           <SearchHeader />
           <div className="top-0 w-full h-16 bg-black space-x-8">
-
-          <Sidebar />
+            <Sidebar />
           </div>
-          
         </div>
         <div className="w-full h-full bg-[#121212] ">
           <div className="w-full h-16"></div>
           <div className="w-40 h-16 flex items-center self-end text-white text-2xl ml-16 font-bold">
-              Browse All
-            </div>
-            <div className="w-full h-full bg-[#121212] space-x-10">
+            Browse All
+          </div>
+          <div className="w-full h-full bg-[#121212] space-x-10">
             <SearchBody />
           </div>
-          
         </div>
       </div>
       <div className="w-screen h-96 flex flex-row">
@@ -38,5 +34,4 @@ export default function Search() {
       </div>
     </>
   );
-};
-
+}

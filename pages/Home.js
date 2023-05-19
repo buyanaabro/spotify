@@ -6,6 +6,7 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Card from "@/components/Card";
 import { data } from "./data";
+import Link from "next/link";
 
 const Artists = () => {
   const router = useRouter([]);
@@ -24,9 +25,12 @@ const Artists = () => {
             <div className="w-40 h-16 flex jus items-center text-white text-2xl ml-16 font-semibold">
               Artists
             </div>
-            <button className="w-full h-16 hover:underline hover:underline-offset-2 hover:text-white flex justify-end items-center text-gray-400 text-sm mr-8 ">
+            <Link
+              href={"/Showall"}
+              className="w-full h-16 hover:underline hover:underline-offset-2 hover:text-white flex justify-end items-center text-gray-400 text-sm mr-8 "
+            >
               Show all
-            </button>
+            </Link>
           </div>
           <div className="w-full h-80 flex justify-center items-center">
             <div className="w-11/12 h-72 grid grid-cols-6 gap-5 ml-4">
@@ -39,9 +43,12 @@ const Artists = () => {
             <div className="w-56 h-16 flex items-center text-white text-2xl ml-16 font-semibold">
               Spotify Playlists
             </div>
-            <button className="w-full h-16 hover:underline hover:underline-offset-2 hover:text-white flex justify-end items-center text-gray-400 text-sm mr-8">
+            <Link
+              href={"/Showall"}
+              className="w-full h-16 hover:underline hover:underline-offset-2 hover:text-white flex justify-end items-center text-gray-400 text-sm mr-8 "
+            >
               Show all
-            </button>
+            </Link>
           </div>
           <div className="w-full h-72 flex justify-center items-center">
             <div className="w-11/12 h-72 grid grid-cols-6 gap-5 ml-4">
