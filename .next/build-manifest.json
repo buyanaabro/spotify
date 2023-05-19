@@ -15,20 +15,20 @@
   ],
   "rootMainFiles": [],
   "pages": {
-    "/Genre": [
+    "/": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/Genre.js"
+      "static/chunks/pages/index.js"
     ],
     "/Home": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/Home.js"
     ],
-    "/Search": [
+    "/Signup": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/Search.js"
+      "static/chunks/pages/Signup.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",
@@ -39,11 +39,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
-    ],
-    "/playlist/[id]": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/playlist/[id].js"
     ]
   },
   "ampFirstPages": []
