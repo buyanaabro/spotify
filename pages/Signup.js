@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { Switch } from "@headlessui/react";
 import Link from "next/link";
+import { Switch } from "@headlessui/react";
 
 function Signup() {
   const router = useRouter();
